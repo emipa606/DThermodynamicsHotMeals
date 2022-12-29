@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[D] Thermodynamics - Hot Meals</name>
+  <author>Dametri</author>
+  <url>https://steamcommunity.com/sharedfiles/filedetails/?id=2110968173</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+  </supportedVersions>
+  <packageId>dame.hotmeals</packageId>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld</downloadUrl>
+    </li>
+    <li>
+      <packageId>dame.thermocore</packageId>
+      <displayName>[D] Thermodynamics - Core</displayName>
+      <downloadUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=2110964897</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>Ludeon.RimWorld</li>
+    <li>Ludeon.RimWorld.Royalty</li>
+    <li>dame.thermocore</li>
+  </loadAfter>
+  <description>Hot meals</description>
+</ModMetaData>

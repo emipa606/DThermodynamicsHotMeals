@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <noPlaceToHeat>Nowhere to heat</noPlaceToHeat>
+  <alreadyHeated>Already hot enough</alreadyHeated>
+  <heatMeal>Heat up {0}</heatMeal>
+  <thawMeal>Thaw {0}</thawMeal>
+</LanguageData>

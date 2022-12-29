@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>coffee beans</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>ice cream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>yogurt</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>smoothie</name>
+        <type>ColdDrink</type>
+      </li>
+      <li>
+        <name>garden coffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>garden tea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>chocolate milk</name>
+        <type>ColdDrink</type>
+      </li>
+      <li>
+        <name>cactus fruit</name>
+        <type>RawTasty</type>
+      </li>
+      <li>
+        <name>flu ez</name>
+        <type>None</type>
+      </li>
+      <li>
+        <name>nigiri</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>maki roll</name>
+        <type>RoomTempMeal</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

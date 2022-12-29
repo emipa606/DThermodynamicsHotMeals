@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LanguageData>
+  <HoMe.CurrentModVersion>Installed mod-version: {0}</HoMe.CurrentModVersion>
+  <HoMe.useCookingAppliances>Pawns will use unreserved cooking appliances (stoves etc.) to heat</HoMe.useCookingAppliances>
+  <HoMe.thawIt>Frozen things will be thawed by pawns before consuming</HoMe.thawIt>
+  <HoMe.negativeMoodDebuff>Mood penalty per level (default -3)</HoMe.negativeMoodDebuff>
+  <HoMe.negativeMoodEnabled>Enable negative moodlets from bad food temperature</HoMe.negativeMoodEnabled>
+  <HoMe.positiveMoodBuff>Mood bonus (default 3)</HoMe.positiveMoodBuff>
+  <HoMe.positiveMoodEnabled>Enable positive moodlets from good food temperature</HoMe.positiveMoodEnabled>
+  <HoMe.heatSpeedMult>Heating speed (at stove etc.) (default 1.0)</HoMe.heatSpeedMult>
+  <HoMe.searchRadius>Heater search radius (default 48)</HoMe.searchRadius>
+  <HoMe.slowDiffuseWhileCarried>Carried items change temperature very slowly</HoMe.slowDiffuseWhileCarried>
+  <HoMe.warmersSlowRot>Warm storage slows rot</HoMe.warmersSlowRot>
+  <HoMe.warmersSlowRotTT>Things being warmed in storage will rot more slowly (equivalent to refrigeration)</HoMe.warmersSlowRotTT>
+  <HoMe.diffusionModifier>Temperature diffusion rate (default 1.0)</HoMe.diffusionModifier>
+  <HoMe.multipleHeat>Multiple pawns can heat at same building</HoMe.multipleHeat>
+  <HoMe.multipleHeatTT>Pawns won't reserve buildings when they heat food, so multiple pawns will be able to use the same appliance to reheat meals. Default off.</HoMe.multipleHeatTT>
+</LanguageData>

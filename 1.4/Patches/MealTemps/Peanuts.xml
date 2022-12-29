@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>PeanutButter</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>PeanutButterJelly</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>RawPeanut</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>RoastedPeanut</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>PeanutOil</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>Peanut</name>
+        <type>RawTasty</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

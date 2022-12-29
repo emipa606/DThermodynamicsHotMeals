@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+  <name>[D] Thermodynamics - Hot Meals (Continued)</name>
+  <packageId>Mlie.DThermodynamicsHotMeals</packageId>
+  <author>Dametri</author>
+  <url>https://github.com/emipa606/DThermodynamicsHotMeals</url>
+  <supportedVersions>
+    <li>1.1</li>
+    <li>1.2</li>
+    <li>1.3</li>
+    <li>1.4</li>
+  </supportedVersions>
+  <modDependencies>
+    <li>
+      <packageId>brrainz.harmony</packageId>
+      <displayName>Harmony</displayName>
+      <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
+      <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
+    </li>
+  </modDependencies>
+  <loadAfter>
+    <li>brrainz.harmony</li>
+    <li>rimfridge.kv.rw</li>
+  </loadAfter>
+  <description>[img]https://i.imgur.com/buuPQel.png[/img]
+Update of Dametris mod
+https://steamcommunity.com/sharedfiles/filedetails/?id=2110968173
+Based on the 1.3 update by Mercenary
+https://steamcommunity.com/sharedfiles/filedetails/?id=2558277446
+
+[b]Includes [D] Thermodynamics - Core since this mod seems to be all it was used for
+Also included my patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2878183338]RimFridge[/url][/b]
+
+[img]https://i.imgur.com/pufA0kM.png[/img]
+
+[table]
+    [tr]
+        [td][url=https://invite.gg/Mlie][img]https://i.imgur.com/zdzzBrc.png[/img][/url][/td]
+        [td][url=https://github.com/emipa606/DThermodynamicsHotMeals][img]https://i.imgur.com/kTkpTOE.png[/img][/url][/td]
+    [/tr]
+    [tr]
+        [td][img]https://i.imgur.com/WjDSfUn.png[/img][/td]
+        [td][img]https://i.imgur.com/Be8E2qJ.png[/img][/td]
+    [/tr]
+[/table]
+	
+[img]https://i.imgur.com/Z4GOv8H.png[/img]
+[h1]Overview[/h1]
+Give you a warm feeling? Leave a like!
+[img]https://i.imgur.com/FcAqtoA.png[/img]
+
+[h2]Designed for Rimworld 1.1, 1.2 [/h2]
+
+Makes the temperature of meals matter, meaning colonists will want their hot meals hot and their cold drinks cold.
+
+[b]Compatible with existing saves.[/b]
+
+Requires Thermodynamics - Core
+Requires Harmony
+
+----------------------------------------------------------------------------------------------------
+[h1]Features[/h1]
+
+All food items are separated into realistic categories:
+[list]
+[*][b]Hot Meals[/b] (e.g.: Simple Meals)
+[*][b]Cold Meals[/b] (e.g.: Ice Cream from VGP Gourmet)
+[*][b]Hot Drinks[/b] (e.g.: Coffee from multiple mods)
+[*][b]Cold Drinks[/b] (e.g.: Beer)
+[*][b]Lukewarm Meals[/b] (e.g.: Nigiri from VGP Gourmet)
+[*][b]Raw Resources[/b] (e.g.: Potatoes)
+[*][b]Nonperishables[/b] (e.g.: Packaged Survival Meals)
+[*][b]Edible Raw[/b] (e.g.: Agave fruit)
+[/list]
+
+[b]Food will keep track of its temperature[/b], and its heat will gradually diffuse with the surrounding environment.
+
+Each category has an associated [b]ideal temperature[/b]. Colonists will be happy to eat food in the right temperature range, and progressively less happy to eat food outside of the ideal range.
+
+Also adds the microwave to heat meals. Regular cooking appliances can also be used.
+[i](And yes, temperature readouts will change based on whether you're set to C or F)[/i]
+
+[h3]Almost everything is configurable in the settings and the settings of the Core.[/h3]
+
+----------------------------------------------------------------------------------------------------
+
+[h3]Feeding your colonists frozen meat can be bad - but giving them a variety of food at the right temperature has its rewards[/h3]
+Each food type's mood bonus or penalty will stack with other food types. Feed them hot coffee, cold beers, and warm food for a significant mood boost! (But watch out for stacking penalties, too)
+
+[h3]So, how do you control food temperature?[/h3]
+
+[img=https://i.imgur.com/2Apzm1p.gif][/img]
+[list]
+[*]Colonists can heat up food that's too cold at a nearby stove (or modded equivalent; can be disabled). This will be done automatically if they can find a nearby heating appliance.
+
+[*]With microelectronics completed, you can build a [b]microwave[/b], a dedicated appliance that reheats meals at super speed.
+[img=https://i.imgur.com/es3CIQ4.png][/img]
+
+[*]With electricity completed, you can build a [b]heat lamp[/b], which will keep any food stored in it warmed to the temperature you set.
+[img=https://i.imgur.com/vy6iWbp.png][/img]
+(Also optionally slows food rot. Enable in Core settings.)
+
+[*]Cold drinks are good, as long as they're not frozen; put some beers in the fridge!
+
+[*]Frozen food (except for Cold Meals) will impose a significant mood penalty.
+
+[*]Consider using some fridges for drinks and cooked meals (except for cold meals; melting ice cream isn't good for anyone).
+[/list]
+
+----------------------------------------------------------------------------------------------------
+[h3]Why this mod?[/h3]
+Have you ever eaten a frozen potato?
+I have.
+----------------------------------------------------------------------------------------------------
+[h2]What about mod support?[/h2]
+Food is categorized dynamically in an attempt to support any food mod. Additionally, the following mods have been tested and are explicitly supported:
+[list][*]Vanilla Cooking Expanded 
+[*]Vanilla Cooking Expanded - Stews
+[*]Vanilla Cooking Expanded - Sushi
+[*]Vanilla Brewing Expanded
+[*]VGP Vegetable Garden
+[*]VGP Garden Canning
+[*]VGP Garden Drinks
+[*]VGP Garden Gourmet
+[*]VGP Garden Medicine
+[*]Rimcuisine 2 Core
+[*]Rimcuisine 2 Meals and Munchies Expansion
+[*]Rimcuisine 2 Bottling and Booze Expansion
+[*]Medieval Times (Unofficial Update)
+[*]Vanilla Factions Expanded - Medieval
+[*]I Am Hungry(continued)
+[*]Peanuts
+[*]Ice Cream
+[*]Ice Cream - Integrated
+[*][CP] Military Furniture
+[*][XND] Adrenaline!
+[/list]
+
+If you have a mod with food that isn't behaving as expected, let me know the food name and the right category; I'll add it.
+
+----------------------------------------------------------------------------------------------------
+[h2]Load order[/h2]
+
+Harmony
+Core
+Royalty
+...
+[D] Thermodynamics - Core
+[D] Thermodynamics - Hot Meals
+
+----------------------------------------------------------------------------------------------------
+[h3]Compatible with:[/h3]
+Designed for compatibility.
+
+[h3]Conflicts:[/h3]
+Let me know of any.
+
+----------------------------------------------------------------------------------------------------
+[h3]Credit[/h3]
+- Chowder for the Heat Lamp texture.
+- Vanilla Furniture Expanded - Props and Decor for the Microwave texture.
+	
+[img]https://i.imgur.com/PwoNOj4.png[/img]
+[list]
+[*] See if the the error persists if you just have this mod and its requirements active.
+[*] If not, try adding your other mods until it happens again.
+[*] Post your error-log using [url=https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib[/url] and command Ctrl+F12
+[*] For best support, please use the Discord-channel for error-reporting.
+[*] Do not report errors by making a discussion-thread, I get no notification of that.
+[*] If you have the solution for a problem, please post it to the GitHub repository.
+[/list]</description>
+</ModMetaData>

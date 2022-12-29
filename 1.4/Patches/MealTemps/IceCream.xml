@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>chocolate ice cream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>VanillaIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>ChocolateIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>StrawberryIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>NeapolitanIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>BananaIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>CoconutIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>PecanIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>PeachIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>CherryIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>CoffeeIceCream</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>PineappleSherbert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>OrangeSherbert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>CoconutSherbert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>RainbowSherbert</name>
+        <type>ColdMeal</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>
