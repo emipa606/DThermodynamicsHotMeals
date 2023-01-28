@@ -10,6 +10,10 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2558277446
 **Includes [D] Thermodynamics - Core since this mod seems to be all it was used for
 Also included my patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2878183338]RimFridge**
 
+### The mod Common Sense has an option to let pawns clean the room before eating. This patch is written in a very destructive way so if you use that mod you need to disable that option for this mod to work
+
+Ideally the author of Common Sense should replace their desctructive Prefix with a more sensible Postfix, adding in their extra toils, similar to how this mod is written.
+
 ![Image](https://i.imgur.com/pufA0kM.png)
 
 	
@@ -28,7 +32,7 @@ Makes the temperature of meals matter, meaning colonists will want their hot mea
 
 **Compatible with existing saves.**
 
-Requires Thermodynamics - Core
+[strike]Requires Thermodynamics - Core[/strike]
 Requires Harmony
 
 ----------------------------------------------------------------------------------------------------
@@ -134,7 +138,7 @@ Harmony
 Core
 Royalty
 ...
-[D] Thermodynamics - Core
+[strike][D] Thermodynamics - Core[/strike]
 [D] Thermodynamics - Hot Meals
 
 ----------------------------------------------------------------------------------------------------
@@ -164,3 +168,4 @@ Let me know of any.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255]Last updated 2023-01-28

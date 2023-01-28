@@ -90,6 +90,38 @@
         <name>VBE_GourmetCocktail</name>
         <type>ColdDrink</type>
       </li>
+      <li>
+        <name>VBE_BlackTea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_CannibalCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_IrishCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_Kombucha</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_LatteCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_MochaCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_PumpkinCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_Yuenyeung</name>
+        <type>ColdDrink</type>
+      </li>
     </Meals>
   </Operation>
 </Patch>
