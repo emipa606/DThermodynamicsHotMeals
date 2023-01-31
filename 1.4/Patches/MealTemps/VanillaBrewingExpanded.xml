@@ -122,6 +122,46 @@
         <name>VBE_Yuenyeung</name>
         <type>ColdDrink</type>
       </li>
+      <li>
+        <name>VBE_DalgonaCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_GreenTea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_MasalaChai</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_MintCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_MintTea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_NoonChai</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_EarlGreyTea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_LemonCoffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>VBE_Lemonade</name>
+        <type>ColdDrink</type>
+      </li>
+      <li>
+        <name>VBE_LemonTea</name>
+        <type>HotDrink</type>
+      </li>
     </Meals>
   </Operation>
 </Patch>

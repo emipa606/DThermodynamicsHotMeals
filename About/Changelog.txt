@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.4.2 - Fixed the VGP silage patch and added the additional drinks in [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2275449762]Vanilla Brewing Expanded - Coffees and Teas[/url]
+
+
 1.4.1 - Added patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2275449762]Vanilla Brewing Expanded - Coffees and Teas[/url]
 
 

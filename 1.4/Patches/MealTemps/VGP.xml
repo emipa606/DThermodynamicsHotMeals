@@ -46,6 +46,10 @@
         <name>maki roll</name>
         <type>RoomTempMeal</type>
       </li>
+      <li>
+        <name>Silage</name>
+        <type>None</type>
+      </li>
     </Meals>
   </Operation>
 </Patch>
