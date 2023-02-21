@@ -7,6 +7,8 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2110968173
 Based on the 1.3 update by Mercenary
 https://steamcommunity.com/sharedfiles/filedetails/?id=2558277446
 
+- Updated chinese translation, thanks Lord Shaw!
+
 **Includes [D] Thermodynamics - Core since this mod seems to be all it was used for
 Also included my patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2878183338]RimFridge**
 
@@ -168,4 +170,4 @@ Let me know of any.
 -  If you have the solution for a problem, please post it to the GitHub repository.
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255]Last updated 2023-02-05
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255]Last updated 2023-02-21

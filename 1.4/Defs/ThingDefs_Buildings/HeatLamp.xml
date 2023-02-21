@@ -51,6 +51,9 @@
       <preventDeteriorationInside>true</preventDeteriorationInside>
       <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
       <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+      <maxItemsInCell>2</maxItemsInCell>
+      <storageGroupTag>Shelf</storageGroupTag>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
       <fixedStorageSettings>
         <filter>
           <categories>
@@ -87,7 +90,7 @@
       <li Class="CompProperties_Power">
         <compClass>CompPowerTrader</compClass>
         <shortCircuitInRain>true</shortCircuitInRain>
-        <basePowerConsumption>100</basePowerConsumption>
+        <basePowerConsumption>200</basePowerConsumption>
       </li>
       <li Class="CompProperties_Flickable" />
       <li Class="CompProperties_Glower">

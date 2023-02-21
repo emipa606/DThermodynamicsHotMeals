@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.4.4 - The heatlamp can hold twice the amount of meals now, increased the poweruse as well.
+
+
 1.4.3 - Updated chinese translation, thanks Lord Shaw!
 
 
