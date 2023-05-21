@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.4.5 - Should now ignore categories added by Animal Controls to not put animal-food in thermodynamic-categories
+
+
 1.4.4 - The heatlamp can hold twice the amount of meals now, increased the poweruse as well.
 
 

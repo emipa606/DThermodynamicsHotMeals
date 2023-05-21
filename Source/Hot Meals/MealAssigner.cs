@@ -29,7 +29,11 @@ public static class MealAssigner
         "PlantFoodRaw",
         "MeatRaw",
         "RC2_FoodProcessed",
-        "Drugs"
+        "Drugs",
+        "Plants",
+        "Crops",
+        "Trees",
+        "OtherEdible"
     };
 
     public static IEnumerable<ThingCategoryDef> AllCats()
