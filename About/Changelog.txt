@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.4.7 - Contact lenses in Medical Supplements should no longer be treated as food
+
+
 1.4.6 - Added temperature patch for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1705663731]Rim Rhymes on sugar paper[/url]
 
 
