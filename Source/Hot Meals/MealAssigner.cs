@@ -269,7 +269,7 @@ public static class MealAssigner
     {
         def.comps.Add(new CompProperties_DFoodTemperature
         {
-            displayName = "Raw resource",
+            displayName = "HoMe.RawResource".Translate(),
             initialTemp = 22,
             likesHeat = true,
             isDrink = false,

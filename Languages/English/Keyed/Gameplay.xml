@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
+  <HoMe.RawResource>Raw resource</HoMe.RawResource>
   <HoMe.Inidealrange>\nIn ideal temperature range</HoMe.Inidealrange>
   <HoMe.Neverreach>\nWill currently never reach good temperature for consumption.</HoMe.Neverreach>
   <HoMe.Willreach>\nWill reach ideal temperature for consumption in around {0} hours.</HoMe.Willreach>
