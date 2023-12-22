@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.4.10 - Microwave is now placable on tables/benches
+
+
 1.4.9 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2520989125]Erin's Hot Drinks[/url]
 
 

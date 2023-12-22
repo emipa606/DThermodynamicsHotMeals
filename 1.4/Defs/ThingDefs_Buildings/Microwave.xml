@@ -18,7 +18,7 @@
     </costList>
     <size>1,1</size>
     <constructEffect>ConstructMetal</constructEffect>
-    <altitudeLayer>Building</altitudeLayer>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
     <fillPercent>0.50</fillPercent>
     <statBases>
       <WorkToBuild>1800</WorkToBuild>
@@ -34,12 +34,14 @@
     <interactionCellOffset>(0,0, 1)</interactionCellOffset>
     <surfaceType>Item</surfaceType>
     <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <clearBuildingArea>false</clearBuildingArea>
     <rotatable>true</rotatable>
     <thingCategories>
       <li>BuildingsProduction</li>
     </thingCategories>
     <defaultPlacingRot>South</defaultPlacingRot>
     <building>
+      <isEdifice>false</isEdifice>
       <isMealSource>true</isMealSource>
     </building>
     <comps>
