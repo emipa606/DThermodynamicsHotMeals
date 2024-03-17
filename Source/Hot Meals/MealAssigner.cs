@@ -9,21 +9,20 @@ namespace DHotMeals;
 
 public static class MealAssigner
 {
-    public static Dictionary<string, MealTempTypes>
+    public static readonly Dictionary<string, MealTempTypes>
         fixedTypes = new Dictionary<string, MealTempTypes>(); // read by patch operations
 
-    public static List<ThingCategoryDef> hotMealCats = new List<ThingCategoryDef>();
-    public static List<ThingCategoryDef> coldMealCats = new List<ThingCategoryDef>();
-    public static List<ThingCategoryDef> hotDrinkCats = new List<ThingCategoryDef>();
-    public static List<ThingCategoryDef> coldDrinkCats = new List<ThingCategoryDef>();
-    public static List<ThingCategoryDef> RTMealCats = new List<ThingCategoryDef>();
-    public static List<ThingCategoryDef> nonperishCats = new List<ThingCategoryDef>();
-    public static List<ThingCategoryDef> rawTastyCats = new List<ThingCategoryDef>();
+    public static readonly List<ThingCategoryDef> hotMealCats = [];
+    public static readonly List<ThingCategoryDef> coldMealCats = [];
+    public static readonly List<ThingCategoryDef> hotDrinkCats = [];
+    public static readonly List<ThingCategoryDef> coldDrinkCats = [];
+    public static readonly List<ThingCategoryDef> RTMealCats = [];
+    public static readonly List<ThingCategoryDef> nonperishCats = [];
+    public static readonly List<ThingCategoryDef> rawTastyCats = [];
 
 
-    public static List<string> excludedCatDefs = new List<string>
-    {
-        // don't hijack these categories
+    public static readonly List<string> excludedCatDefs =
+    [
         "RC2_GrainsRaw",
         "RC2_VegetablesRaw",
         "PlantFoodRaw",
@@ -34,7 +33,7 @@ public static class MealAssigner
         "Crops",
         "Trees",
         "OtherEdible"
-    };
+    ];
 
     public static IEnumerable<ThingCategoryDef> AllCats()
     {
@@ -44,11 +43,11 @@ public static class MealAssigner
 
     public static List<ThingCategoryDef> AllParents()
     {
-        return new List<ThingCategoryDef>
-        {
+        return
+        [
             Base.DefOf.DFoodHotMeals, Base.DefOf.DFoodColdMeals, Base.DefOf.DFoodHotDrinks,
             Base.DefOf.DFoodColdDrinks, Base.DefOf.DFoodRTMeals, Base.DefOf.DFoodNonperishable, Base.DefOf.DFoodRawTasty
-        };
+        ];
     }
 
     public static ThingCategoryDef GenerateCategory(ThingCategoryDef tc, string newDef, ThingCategoryDef parent)

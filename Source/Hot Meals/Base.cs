@@ -10,10 +10,10 @@ namespace DHotMeals;
 [StaticConstructorOnStartup]
 public static class Base
 {
-    public static bool VGPRunning;
-    public static bool RimFridgeRunning;
-    public static Type CompRefrigeratorType;
-    public static FieldInfo RimFridgeTempField;
+    public static readonly bool VGPRunning;
+    public static readonly bool RimFridgeRunning;
+    public static readonly Type CompRefrigeratorType;
+    public static readonly FieldInfo RimFridgeTempField;
 
     static Base()
     {

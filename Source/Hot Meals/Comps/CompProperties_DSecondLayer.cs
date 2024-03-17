@@ -4,7 +4,7 @@ namespace DHotMeals.Comps;
 
 public class CompProperties_DSecondLayer : CompProperties
 {
-    public AltitudeLayer altitudeLayer = AltitudeLayer.MoteOverhead;
+    public readonly AltitudeLayer altitudeLayer = AltitudeLayer.MoteOverhead;
 
     public GraphicData graphicData;
 

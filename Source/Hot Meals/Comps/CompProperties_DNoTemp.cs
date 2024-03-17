@@ -4,7 +4,7 @@ namespace DThermodynamicsCore.Comps;
 
 public class CompProperties_DNoTemp : CompProperties
 {
-    public string inspectString;
+    public readonly string inspectString;
 
     public CompProperties_DNoTemp(string inspect)
     {

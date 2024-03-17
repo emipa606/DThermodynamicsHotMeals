@@ -158,7 +158,7 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
         return temp < Levels.reallyBadTemp
             ? 2
             :
-            // hotter than really bad temp
+            // hotter than terrible temp
             3;
     }
 
@@ -167,12 +167,7 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
     {
         if (PropsTemp.noHeat)
         {
-            if (curTemp > 0)
-            {
-                return "HoMe.edible".Translate();
-            }
-
-            return "HoMe.frozensolid".Translate();
+            return curTemp > 0 ? "HoMe.edible".Translate() : "HoMe.frozensolid".Translate();
         }
 
         if (GetPositiveMoodEffect(temp) == 1)
@@ -309,8 +304,7 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
 
         if (JobFailReason.HaveReason)
         {
-            string command;
-            command = "CannotGenericWorkCustom".Translate(PropsTemp.likesHeat
+            string command = "CannotGenericWorkCustom".Translate(PropsTemp.likesHeat
                 ? "heatMeal".Translate(parent.Label)
                 : "thawMeal".Translate(parent.Label));
 
@@ -320,8 +314,7 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
         }
         else if (job != null)
         {
-            string command;
-            command = PropsTemp.likesHeat
+            string command = PropsTemp.likesHeat
                 ? "heatMeal".Translate(parent.Label).CapitalizeFirst()
                 : "thawMeal".Translate(parent.Label).CapitalizeFirst();
 

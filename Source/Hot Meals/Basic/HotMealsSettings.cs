@@ -56,7 +56,7 @@ public class HotMealsSettings : ModSettings
         var searchLabelRect = searchRect.LeftPartPixels(300);
         var searchSliderRect = searchRect.RightPartPixels(searchRect.width - 300);
         Widgets.Label(searchLabelRect, "HoMe.searchRadius".Translate());
-        searchRadius = Widgets.HorizontalSlider_NewTemp(searchSliderRect, searchRadius, 1f, 100f, false,
+        searchRadius = Widgets.HorizontalSlider(searchSliderRect, searchRadius, 1f, 100f, false,
             searchRadius.ToString("f0"), null, null, 1f);
         ls.Gap();
 
@@ -64,7 +64,7 @@ public class HotMealsSettings : ModSettings
         var heatLabelRect = heatRect.LeftPartPixels(300);
         var heatSliderRect = heatRect.RightPartPixels(heatRect.width - 300);
         Widgets.Label(heatLabelRect, "HoMe.heatSpeedMult".Translate());
-        heatSpeedMult = Widgets.HorizontalSlider_NewTemp(heatSliderRect, heatSpeedMult, 0.1f, 5.0f, false,
+        heatSpeedMult = Widgets.HorizontalSlider(heatSliderRect, heatSpeedMult, 0.1f, 5.0f, false,
             heatSpeedMult.ToString("f1"), null, null, 0.1f);
         ls.Gap();
         ls.Gap();
@@ -76,7 +76,7 @@ public class HotMealsSettings : ModSettings
             var posLabelRect = posRect.LeftPartPixels(300);
             var posSliderRect = posRect.RightPartPixels(posRect.width - 300);
             Widgets.Label(posLabelRect, "HoMe.positiveMoodBuff".Translate());
-            positiveMoodBuff = Mathf.RoundToInt(Widgets.HorizontalSlider_NewTemp(posSliderRect, positiveMoodBuff, 1, 20,
+            positiveMoodBuff = Mathf.RoundToInt(Widgets.HorizontalSlider(posSliderRect, positiveMoodBuff, 1, 20,
                 false,
                 positiveMoodBuff.ToString(), null, null, 1));
         }
@@ -89,7 +89,7 @@ public class HotMealsSettings : ModSettings
             var negLabelRect = negRect.LeftPartPixels(300);
             var negSliderRect = negRect.RightPartPixels(negRect.width - 300);
             Widgets.Label(negLabelRect, "HoMe.negativeMoodDebuff".Translate());
-            negativeMoodDebuff = Mathf.RoundToInt(Widgets.HorizontalSlider_NewTemp(negSliderRect, negativeMoodDebuff,
+            negativeMoodDebuff = Mathf.RoundToInt(Widgets.HorizontalSlider(negSliderRect, negativeMoodDebuff,
                 -15, 0,
                 false, negativeMoodDebuff.ToString(), null, null, 1));
         }
@@ -105,7 +105,7 @@ public class HotMealsSettings : ModSettings
         var diffusionLabelRect = diffusionRect.LeftPartPixels(300);
         var diffusionSliderRect = diffusionRect.RightPartPixels(diffusionRect.width - 300);
         Widgets.Label(diffusionLabelRect, "HoMe.diffusionModifier".Translate());
-        diffusionModifier = Widgets.HorizontalSlider_NewTemp(diffusionSliderRect, diffusionModifier, 0, 5.0f, false,
+        diffusionModifier = Widgets.HorizontalSlider(diffusionSliderRect, diffusionModifier, 0, 5.0f, false,
             diffusionModifier.ToString("f2"), null, null, 0.05f);
         ls.Gap();
 

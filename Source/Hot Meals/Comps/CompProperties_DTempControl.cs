@@ -6,9 +6,9 @@ namespace DThermodynamicsCore.Comps;
 
 public class CompProperties_DTempControl : CompProperties
 {
-    public float defaultTargetTemperature = 21f;
-    public float maxTargetTemperature = 50f;
-    public float minTargetTemperature = -50f;
+    public readonly float defaultTargetTemperature = 21f;
+    public readonly float maxTargetTemperature = 50f;
+    public readonly float minTargetTemperature = -50f;
 
     public CompProperties_DTempControl()
     {

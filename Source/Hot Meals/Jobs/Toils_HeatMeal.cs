@@ -8,7 +8,7 @@ namespace DHotMeals;
 
 public static class Toils_HeatMeal
 {
-    public static List<ThingDef> allowedHeaters = new List<ThingDef> { Base.DefOf.DMicrowave };
+    public static readonly List<ThingDef> allowedHeaters = [Base.DefOf.DMicrowave];
 
     public static Thing FindPlaceToHeatFood(Thing food, Pawn pawn, float searchRadius = -1f, Thing searchNear = null)
     {
@@ -21,6 +21,12 @@ public static class Toils_HeatMeal
         {
             searchRadius = HotMealsSettings.searchRadius;
         }
+
+        var result = GenClosest.ClosestThing_Regionwise_ReachablePrioritized(searchNear.PositionHeld,
+            searchNear.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial),
+            PathEndMode.Touch, TraverseParms.For(pawn), searchRadius, Valid,
+            thing => thing.GetStatValue(StatDefOf.WorkTableWorkSpeedFactor));
+        return result;
 
         bool Valid(Thing m)
         {
@@ -48,12 +54,6 @@ public static class Toils_HeatMeal
 
             return !m.IsForbidden(pawn) && (HotMealsSettings.multipleHeat || pawn.CanReserve(m, 1, 1));
         }
-
-        var result = GenClosest.ClosestThing_Regionwise_ReachablePrioritized(searchNear.PositionHeld,
-            searchNear.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial),
-            PathEndMode.Touch, TraverseParms.For(pawn), searchRadius, Valid,
-            thing => thing.GetStatValue(StatDefOf.WorkTableWorkSpeedFactor));
-        return result;
     }
 
     public static Toil HeatMeal(TargetIndex foodIndex = TargetIndex.A, TargetIndex heaterIndex = TargetIndex.C)

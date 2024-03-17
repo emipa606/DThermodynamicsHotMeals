@@ -9,7 +9,7 @@ namespace DHotMeals.Core_Patches;
 [HarmonyPatch("PrepareToIngestToils_ToolUser")]
 public static class Patch_PrepareToIngestToils_ToolUser_Postfix
 {
-    public static List<Toil> carryToils = new List<Toil>();
+    public static readonly List<Toil> carryToils = [];
 
     private static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_Ingest __instance)
     {

@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- bases -->
+  <ThoughtDef Name="DAteThing" Abstract="True">
+    <durationDays>1</durationDays>
+    <showBubble>true</showBubble>
+    <nullifyingTraits>
+      <li>Ascetic</li>
+    </nullifyingTraits>
+    <thoughtClass>DHotMeals.Thought_MealTemp</thoughtClass>
+    <stackLimit>10</stackLimit>
+    <stages>
+      <li>
+        <label>consumed something</label>
+        <description>I consumed something</description>
+        <baseMoodEffect>1</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+  <ThoughtDef ParentName="DAteThing">
+    <defName>DAteGoodThing</defName>
+    <icon>Things/Mote/ThoughtSymbol/TempJustRight</icon>
+  </ThoughtDef>
+  <ThoughtDef ParentName="DAteThing">
+    <defName>DAteTooHot</defName>
+    <icon>Things/Mote/ThoughtSymbol/TempTooHot</icon>
+  </ThoughtDef>
+  <ThoughtDef ParentName="DAteThing">
+    <defName>DAteTooCold</defName>
+    <icon>Things/Mote/ThoughtSymbol/TempTooCold</icon>
+  </ThoughtDef>
+  <ThoughtDef ParentName="DAteThing">
+    <defName>DAteMeh</defName>
+    <showBubble>false</showBubble>
+  </ThoughtDef>
+</Defs>

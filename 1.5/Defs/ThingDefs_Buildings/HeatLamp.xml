@@ -1,0 +1,132 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef>
+    <defName>DHeatLamp</defName>
+    <label>heat lamp</label>
+    <description>A heat lamp for keeping food warm.</description>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <thingClass>DThermodynamicsCore.Building_HeatedStorage</thingClass>
+    <category>Building</category>
+    <selectable>true</selectable>
+    <tradeTags>
+      <li>Furniture</li>
+    </tradeTags>
+    <drawerType>MapMeshAndRealTime</drawerType>
+    <graphicData>
+      <texPath>Things/Building/Misc/DHeatLamp</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>3.0, 1.5</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <soundImpactDefault>BulletImpact_Metal</soundImpactDefault>
+    <costList>
+      <Steel>80</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <size>2,1</size>
+    <constructEffect>ConstructMetal</constructEffect>
+    <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
+    <repairEffect>Repair</repairEffect>
+    <leaveResourcesWhenKilled>true</leaveResourcesWhenKilled>
+    <filthLeaving>Filth_RubbleBuilding</filthLeaving>
+    <altitudeLayer>Building</altitudeLayer>
+    <fillPercent>0.50</fillPercent>
+    <statBases>
+      <WorkToBuild>2600</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
+    </statBases>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <rotatable>true</rotatable>
+    <thingCategories>
+      <li>BuildingsFurniture</li>
+    </thingCategories>
+    <building>
+      <preventDeteriorationInside>true</preventDeteriorationInside>
+      <preventDeteriorationOnTop>true</preventDeteriorationOnTop>
+      <ignoreStoredThingsBeauty>false</ignoreStoredThingsBeauty>
+      <maxItemsInCell>2</maxItemsInCell>
+      <storageGroupTag>Shelf</storageGroupTag>
+      <blueprintClass>Blueprint_Storage</blueprintClass>
+      <fixedStorageSettings>
+        <filter>
+          <categories>
+            <li>AnimalProductRaw</li>
+            <li>Corpses</li>
+            <li>Drugs</li>
+            <li>EggsFertilized</li>
+            <li>EggsUnfertilized</li>
+            <li>Foods</li>
+            <li>Medicine</li>
+            <li>PlantMatter</li>
+            <li>PlantFoodRaw</li>
+            <li>BodyParts</li>
+          </categories>
+          <specialFiltersToDisallow>
+            <li>AllowRotten</li>
+          </specialFiltersToDisallow>
+        </filter>
+      </fixedStorageSettings>
+      <defaultStorageSettings>
+        <priority>Important</priority>
+        <filter>
+          <categories>
+            <li>FoodMeals</li>
+          </categories>
+          <disallowedThingDefs>
+            <li>MealSurvivalPack</li>
+          </disallowedThingDefs>
+        </filter>
+      </defaultStorageSettings>
+    </building>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>200</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(255,150,100,0)</glowColor>
+      </li>
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+      </li>
+      <li Class="DHotMeals.Comps.CompProperties_DSecondLayer">
+        <graphicData>
+          <texPath>Things/Building/Misc/DHeatBar</texPath>
+          <graphicClass>Graphic_Multi</graphicClass>
+          <!--<shaderType>Transparent</shaderType> -->
+          <drawSize>(3.0,1.5)</drawSize>
+        </graphicData>
+        <altitudeLayer>Projectile</altitudeLayer>
+      </li>
+      <li Class="DThermodynamicsCore.Comps.CompProperties_DTempControl">
+        <defaultTargetTemperature>50</defaultTargetTemperature>
+        <minTargetTemperature>-100</minTargetTemperature>
+        <maxTargetTemperature>50</maxTargetTemperature>
+      </li>
+    </comps>
+    <tickerType>Rare</tickerType>
+    <designationCategory>Temperature</designationCategory>
+    <inspectorTabs>
+      <li>ITab_Storage</li>
+    </inspectorTabs>
+    <placeWorkers>
+      <li>PlaceWorker_Heater</li>
+    </placeWorkers>
+    <designationHotKey>Misc5</designationHotKey>
+    <researchPrerequisites>
+      <li>Electricity</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

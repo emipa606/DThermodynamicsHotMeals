@@ -1,21 +1,16 @@
 ﻿namespace DThermodynamicsCore.Comps;
 
-public class DTemperatureLevels
+public class DTemperatureLevels(
+    float good = 37f,
+    float ok = 20f,
+    float bad = 10f,
+    float reallyBad = 0.01f,
+    float frozen = 0f)
 {
-    public float badTemp;
-    public float frozenTemp;
+    public readonly float badTemp = bad;
 
-    public float goodTemp;
-    public float okTemp;
-    public float reallyBadTemp;
-
-    public DTemperatureLevels(float good = 37f, float ok = 20f, float bad = 10f, float reallyBad = 0.01f,
-        float frozen = 0f)
-    {
-        goodTemp = good;
-        okTemp = ok;
-        badTemp = bad;
-        reallyBadTemp = reallyBad;
-        frozenTemp = frozen;
-    }
+    public readonly float goodTemp = good;
+    public readonly float okTemp = ok;
+    public readonly float reallyBadTemp = reallyBad;
+    public float frozenTemp = frozen;
 }
