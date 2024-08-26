@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <LanguageData>
   <HoMe.RawResource>Raw resource</HoMe.RawResource>
   <HoMe.Inidealrange>\nIn ideal temperature range</HoMe.Inidealrange>
@@ -22,11 +22,11 @@
   <HoMe.frozensolid>frozen solid</HoMe.frozensolid>
   <HoMe.justright>just right</HoMe.justright>
   <HoMe.toocold>too cold</HoMe.toocold>
-  <HoMe.toocoldInfo>Too cold: &gt;{0}</HoMe.toocoldInfo>
+  <HoMe.toocoldInfo>Too cold: >{0}</HoMe.toocoldInfo>
   <HoMe.toochilly>too chilly</HoMe.toochilly>
   <HoMe.toowarm>too warm</HoMe.toowarm>
   <HoMe.toohot>too hot</HoMe.toohot>
-  <HoMe.toohotInfo>Too hot: &gt;{0}</HoMe.toohotInfo>
+  <HoMe.toohotInfo>Too hot: >{0}</HoMe.toohotInfo>
   <HoMe.scalding>scalding</HoMe.scalding>
   <HoMe.rawStuff>Resources meant to be cooked into something more edible.\nWill never make your colonists happy to eat, but will make them unhappy if they eat it frozen.</HoMe.rawStuff>
   <HoMe.eatHot>Food meant to be eaten hot</HoMe.eatHot>
@@ -35,11 +35,11 @@
   <HoMe.drinkHot>A drink that's meant to be served hot</HoMe.drinkHot>
   <HoMe.drinkCold>A drink best served chilled, but not frozen</HoMe.drinkCold>
   <HoMe.IdealTempUnder>Ideal temperature: &lt;{0}</HoMe.IdealTempUnder>
-  <HoMe.IdealTempOver>Ideal temperature: &gt;{0}</HoMe.IdealTempOver>
+  <HoMe.IdealTempOver>Ideal temperature: >{0}</HoMe.IdealTempOver>
   <HoMe.IdealTemp>Ideal temperature: {0}-{1}</HoMe.IdealTemp>
   <HoMe.OKTemp>OK temperature: {0}-{1}</HoMe.OKTemp>
   <HoMe.BadTemp>Bad temperature: {0}-{1}</HoMe.BadTemp>
-  <HoMe.AwfulTempOver>Awful temperature: &gt;{0}</HoMe.AwfulTempOver>
+  <HoMe.AwfulTempOver>Awful temperature: >{0}</HoMe.AwfulTempOver>
   <HoMe.AwfulTempUnder>Awful temperature: &lt;{0}</HoMe.AwfulTempUnder>
   <HoMe.FrozenMoodWarning>Eating this below {0} will cause significant mood penalties.</HoMe.FrozenMoodWarning>
 </LanguageData>

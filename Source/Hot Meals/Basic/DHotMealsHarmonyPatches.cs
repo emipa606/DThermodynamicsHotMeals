@@ -4,9 +4,9 @@ using Verse;
 
 namespace DHotMeals;
 
-public class HarmonyPatches : Mod
+public class DHotMealsHarmonyPatches : Mod
 {
-    public HarmonyPatches(ModContentPack content) : base(content)
+    public DHotMealsHarmonyPatches(ModContentPack content) : base(content)
     {
         new Harmony("io.github.dametri.hotmeals").PatchAll(Assembly.GetExecutingAssembly());
     }

@@ -26,7 +26,7 @@ public static class Base
 
         if (RimFridgeRunning)
         {
-            CompRefrigeratorType = AccessTools.TypeByName("CompRefrigerator");
+            CompRefrigeratorType = AccessTools.TypeByName("RimFridge.CompRefrigerator");
             RimFridgeTempField = CompRefrigeratorType.GetField("currentTemp");
         }
 

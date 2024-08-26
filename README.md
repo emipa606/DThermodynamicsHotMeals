@@ -1,4 +1,4 @@
-# DThermodynamicsHotMeals
+# [[D] Thermodynamics - Hot Meals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255)
 
 ![Image](https://i.imgur.com/buuPQel.png)
 
@@ -10,10 +10,9 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2558277446
 - Updated chinese translation, thanks Lord Shaw!
 
 **Includes [D] Thermodynamics - Core since this mod seems to be all it was used for
-Also included my patch for https://steamcommunity.com/sharedfiles/filedetails/?id=2878183338]RimFridge**
+Also included my patch for [RimFridge](https://steamcommunity.com/sharedfiles/filedetails/?id=2878183338)**
 
 ![Image](https://i.imgur.com/pufA0kM.png)
-
 	
 ![Image](https://i.imgur.com/Z4GOv8H.png)
 
@@ -22,7 +21,6 @@ Also included my patch for https://steamcommunity.com/sharedfiles/filedetails/?i
 Give you a warm feeling? Leave a like!
 ![Image](https://i.imgur.com/FcAqtoA.png)
 
-
 ## Designed for Rimworld 1.1, 1.2 
 
 
@@ -30,7 +28,7 @@ Makes the temperature of meals matter, meaning colonists will want their hot mea
 
 **Compatible with existing saves.**
 
-[strike]Requires Thermodynamics - Core[/strike]
+~~Requires Thermodynamics - Core~~
 Requires Harmony
 
 ----------------------------------------------------------------------------------------------------
@@ -70,19 +68,16 @@ Each food type's mood bonus or penalty will stack with other food types. Feed th
 ### So, how do you control food temperature?
 
 
-[img=https://i.imgur.com/2Apzm1p.gif])
-
+[img=https://i.imgur.com/2Apzm1p.gif][/img]
 
 
 - Colonists can heat up food that's too cold at a nearby stove (or modded equivalent; can be disabled). This will be done automatically if they can find a nearby heating appliance.
 
 - With microelectronics completed, you can build a **microwave**, a dedicated appliance that reheats meals at super speed.
-[img=https://i.imgur.com/es3CIQ4.png])
-
+[img=https://i.imgur.com/es3CIQ4.png][/img]
 
 - With electricity completed, you can build a **heat lamp**, which will keep any food stored in it warmed to the temperature you set.
-[img=https://i.imgur.com/vy6iWbp.png])
-
+[img=https://i.imgur.com/vy6iWbp.png][/img]
 (Also optionally slows food rot. Enable in Core settings.)
 
 - Cold drinks are good, as long as they're not frozen; put some beers in the fridge!
@@ -136,7 +131,7 @@ Harmony
 Core
 Royalty
 ...
-[strike][D] Thermodynamics - Core[/strike]
+~~[D] Thermodynamics - Core~~
 [D] Thermodynamics - Hot Meals
 
 ----------------------------------------------------------------------------------------------------
@@ -160,13 +155,12 @@ Let me know of any.
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using https://steamcommunity.com/workshop/filedetails/?id=818773962]HugsLib or the standalone https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404]Uploader and command Ctrl+F12
+-  Post your error-log using [HugsLib](https://steamcommunity.com/workshop/filedetails/?id=818773962) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.
--  Use https://github.com/RimSort/RimSort/releases/latest]RimSort to sort your mods
+-  Use [RimSort](https://github.com/RimSort/RimSort/releases/latest) to sort your mods
 
 
 
-https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255]![Image](https://img.shields.io/github/v/release/emipa606/DThermodynamicsHotMeals?label=latest%20version&style=plastic&color=9f1111&labelColor=black)
-
+[![Image](https://img.shields.io/github/v/release/emipa606/DThermodynamicsHotMeals?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255)
