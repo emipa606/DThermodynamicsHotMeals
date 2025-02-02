@@ -6,9 +6,8 @@ using Verse.AI;
 
 namespace DHotMeals.Core_Patches;
 
-[HarmonyPatch(typeof(Toils_Ingest))]
-[HarmonyPatch("CarryIngestibleToChewSpot")]
-internal class Patch_CarryIngestibleToChewSpot_Postfix
+[HarmonyPatch(typeof(Toils_Ingest), nameof(Toils_Ingest.CarryIngestibleToChewSpot))]
+internal class Toils_Ingest_CarryIngestibleToChewSpot
 {
     public static void Postfix(Pawn pawn, TargetIndex ingestibleInd, Toil __result)
     {
@@ -31,7 +30,7 @@ internal class Patch_CarryIngestibleToChewSpot_Postfix
 
         if (comp.PropsTemp.likesHeat || HotMealsSettings.thawIt && comp.curTemp < 0 && !comp.PropsTemp.okFrozen)
         {
-            Patch_PrepareToIngestToils_ToolUser_Postfix.carryToils.Add(__result);
+            JobDriver_Ingest_PrepareToIngestToils_ToolUser.carryToils.Add(__result);
         }
     }
 }

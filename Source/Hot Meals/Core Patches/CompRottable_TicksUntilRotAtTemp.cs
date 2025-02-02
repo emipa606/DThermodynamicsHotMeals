@@ -1,19 +1,17 @@
 ﻿using DHotMeals;
 using HarmonyLib;
 using RimWorld;
-using Verse;
 
 namespace DThermodynamicsCore.Core_Patches;
 
-[HarmonyPatch(typeof(CompRottable))]
-[HarmonyPatch("CompInspectStringExtra")]
-internal class Patch_RotCompInspectStringExtra_Postfix
+[HarmonyPatch(typeof(CompRottable), nameof(CompRottable.TicksUntilRotAtTemp))]
+internal class CompRottable_TicksUntilRotAtTemp
 {
-    public static void Postfix(ref string __result, CompRottable __instance)
+    public static bool Prefix(ref float temp, CompRottable __instance)
     {
         if (!HotMealsSettings.warmersSlowRot)
         {
-            return;
+            return true;
         }
 
         var rotter = __instance.parent;
@@ -21,7 +19,7 @@ internal class Patch_RotCompInspectStringExtra_Postfix
         var thingList = map?.thingGrid.ThingsListAt(rotter.PositionHeld);
         if (thingList == null)
         {
-            return;
+            return true;
         }
 
         foreach (var thing in thingList)
@@ -31,8 +29,10 @@ internal class Patch_RotCompInspectStringExtra_Postfix
                 continue;
             }
 
-            __result = __result.Replace("NotRefrigerated".Translate(), "HoMe.Warmed".Translate());
+            temp = 1f;
             break;
         }
+
+        return true;
     }
 }

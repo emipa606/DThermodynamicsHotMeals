@@ -79,10 +79,7 @@ public static class HeatMealInjector
             }
         };
         yield return getHeater;
-        yield return Toils_Jump.JumpIf(empty, delegate
-        {
-            return heater == null;
-        });
+        yield return Toils_Jump.JumpIf(empty, () => heater == null);
         if (!HotMealsSettings.multipleHeat)
         {
             yield return Toils_Reserve.Reserve(finalLocation);

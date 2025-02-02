@@ -1,5 +1,10 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.5.2 - Better support for Gastronomy, waiters will heat up meals before serving
+Better handling of heating when no heater is found
+Thanks to jagerguy36 for the code!
+
+
 1.5.1 - Fixed incompatibility with Vanilla Vehicles Expanded regarding RimFridge
 
 

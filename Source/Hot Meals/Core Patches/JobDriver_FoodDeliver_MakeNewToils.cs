@@ -5,11 +5,10 @@ using Verse.AI;
 
 namespace DHotMeals.Core_Patches;
 
-[HarmonyPatch(typeof(JobDriver_FoodDeliver))]
-[HarmonyPatch("MakeNewToils")]
-internal class Patch_FoodDeliver_Postfix
+[HarmonyPatch(typeof(JobDriver_FoodDeliver), "MakeNewToils")]
+internal class JobDriver_FoodDeliver_MakeNewToils
 {
-    private static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_FoodDeliver __instance,
+    public static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_FoodDeliver __instance,
         bool ___eatingFromInventory, bool ___usingNutrientPasteDispenser)
     {
         int numToilsBeforeGoto;

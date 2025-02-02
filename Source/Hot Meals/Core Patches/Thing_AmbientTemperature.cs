@@ -4,9 +4,8 @@ using Verse;
 
 namespace DThermodynamicsCore.Core_Patches;
 
-[HarmonyPatch(typeof(Thing))]
-[HarmonyPatch("AmbientTemperature", MethodType.Getter)]
-internal class Patch_ThingAmbientTemperature_Prefix
+[HarmonyPatch(typeof(Thing), nameof(Thing.AmbientTemperature), MethodType.Getter)]
+internal class Thing_AmbientTemperature
 {
     public static bool Prefix(ref float __result, Thing __instance)
     {

@@ -5,13 +5,12 @@ using Verse.AI;
 
 namespace DHotMeals.Core_Patches;
 
-[HarmonyPatch(typeof(JobDriver_Ingest))]
-[HarmonyPatch("PrepareToIngestToils_ToolUser")]
-public static class Patch_PrepareToIngestToils_ToolUser_Postfix
+[HarmonyPatch(typeof(JobDriver_Ingest), "PrepareToIngestToils_ToolUser")]
+public static class JobDriver_Ingest_PrepareToIngestToils_ToolUser
 {
     public static readonly List<Toil> carryToils = [];
 
-    private static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_Ingest __instance)
+    public static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_Ingest __instance)
     {
         var food = __instance.job.GetTarget(TargetIndex.A);
         foreach (var baseToil in values)

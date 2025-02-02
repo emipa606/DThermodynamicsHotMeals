@@ -5,11 +5,10 @@ using Verse.AI;
 
 namespace DHotMeals.Core_Patches;
 
-[HarmonyPatch(typeof(JobDriver_SocialRelax))]
-[HarmonyPatch("MakeNewToils")]
-internal class Patch_SocialRelax_Postfix
+[HarmonyPatch(typeof(JobDriver_SocialRelax), "MakeNewToils")]
+internal class SocialRelax_MakeNewToils
 {
-    private static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_SocialRelax __instance)
+    public static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_SocialRelax __instance)
     {
         if (!__instance.job.GetTarget(TargetIndex.C).HasThing)
         {
