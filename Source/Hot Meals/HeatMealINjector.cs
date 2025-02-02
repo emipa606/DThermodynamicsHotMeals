@@ -59,6 +59,7 @@ public static class HeatMealInjector
 
             return true;
         });
+        Thing heater = null;
         var getHeater = new Toil();
         getHeater.initAction = delegate
         {
@@ -71,7 +72,7 @@ public static class HeatMealInjector
                 table = curJob.GetTarget(tableIndex).Thing;
             }
 
-            var heater = Toils_HeatMeal.FindPlaceToHeatFood(foodToHeat, actor, searchNear: table);
+            heater = Toils_HeatMeal.FindPlaceToHeatFood(foodToHeat, actor, searchNear: table);
             if (heater != null)
             {
                 curJob.SetTarget(finalLocation, heater);
@@ -80,9 +81,6 @@ public static class HeatMealInjector
         yield return getHeater;
         yield return Toils_Jump.JumpIf(empty, delegate
         {
-            var actor = getHeater.actor;
-            var curJob = actor.jobs.curJob;
-            var heater = curJob.GetTarget(finalLocation).Thing;
             return heater == null;
         });
         if (!HotMealsSettings.multipleHeat)
