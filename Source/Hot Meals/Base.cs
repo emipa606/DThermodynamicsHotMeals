@@ -22,7 +22,7 @@ public static class Base
             VGPRunning = true;
         }
 
-        RimFridgeRunning = ModLister.GetActiveModWithIdentifier("rimfridge.kv.rw") != null;
+        RimFridgeRunning = ModLister.GetActiveModWithIdentifier("rimfridge.kv.rw", true) != null;
 
         if (RimFridgeRunning)
         {
@@ -94,7 +94,7 @@ public static class Base
         DefDatabase<RecipeDef>.ResolveAllReferences();
     }
 
-    public static bool IsExplicitlyDefined(ThingDef def)
+    private static bool IsExplicitlyDefined(ThingDef def)
     {
         var s = MealAssigner.fixedTypes.Keys.ToList()
             .FindLast(x => def.defName.ToLower() == x.ToLower() || def.label.ToLower() == x.ToLower());
@@ -107,7 +107,7 @@ public static class Base
         switch (category)
         {
             case MealTempTypes.None:
-                return true;
+                break;
             case MealTempTypes.HotMeal:
                 MealAssigner.AddHotMeal(def);
                 break;

@@ -29,29 +29,29 @@ internal class StatWorker_Temperature : StatWorker
         return "";
     }
 
-    public static string InIdealRange()
+    private static string InIdealRange()
     {
         return "HoMe.Inidealrange".Translate();
     }
 
-    public static string WillNeverReach()
+    private static string WillNeverReach()
     {
         return "HoMe.Neverreach".Translate();
     }
 
-    public static string HoursToIdeal(CompDTemperatureIngestible comp, double idealTemp)
+    private static string HoursToIdeal(CompDTemperatureIngestible comp, double idealTemp)
     {
         return
             "HoMe.Willreach".Translate($"{ThermodynamicsBase.HoursToTargetTemp(comp, idealTemp):f1}");
     }
 
-    public static string HoursInIdeal(CompDTemperatureIngestible comp, double changeThreshold)
+    private static string HoursInIdeal(CompDTemperatureIngestible comp, double changeThreshold)
     {
         return
             "HoMe.Willremain".Translate($"{ThermodynamicsBase.HoursToTargetTemp(comp, changeThreshold):f1}");
     }
 
-    public static string HoursToAmbient(CompDTemperature comp)
+    private static string HoursToAmbient(CompDTemperature comp)
     {
         return
             "HoMe.Willreachambient".Translate(((float)comp.AmbientTemperature).ToStringTemperature(),

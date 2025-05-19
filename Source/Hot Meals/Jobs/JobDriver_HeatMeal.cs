@@ -56,7 +56,7 @@ internal class JobDriver_HeatMeal : JobDriver
     }
 
 
-    public Toil ReserveFood()
+    private Toil ReserveFood()
     {
         return new Toil
         {

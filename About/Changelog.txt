@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.5.3 - Fixed issue with Vanilla Cooking Expanded Cheese
+
+
 1.5.2 - Better support for Gastronomy, waiters will heat up meals before serving
 Better handling of heating when no heater is found
 Thanks to jagerguy36 for the code!

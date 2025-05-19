@@ -5,9 +5,9 @@ namespace DHotMeals;
 
 public class HotMealsSettings : ModSettings
 {
-    public static bool positiveMoodEnabled = true;
+    private static bool positiveMoodEnabled = true;
     public static int positiveMoodBuff = 3;
-    public static bool negativeMoodEnabled = true;
+    private static bool negativeMoodEnabled = true;
     public static int negativeMoodDebuff = -3;
     public static float heatSpeedMult = 1;
     public static bool thawIt;

@@ -8,14 +8,11 @@ namespace DHotMeals;
 
 public static class Toils_HeatMeal
 {
-    public static readonly List<ThingDef> allowedHeaters = [Base.DefOf.DMicrowave];
+    private static readonly List<ThingDef> allowedHeaters = [Base.DefOf.DMicrowave];
 
     public static Thing FindPlaceToHeatFood(Thing food, Pawn pawn, float searchRadius = -1f, Thing searchNear = null)
     {
-        if (searchNear == null)
-        {
-            searchNear = food;
-        }
+        searchNear ??= food;
 
         if (searchRadius < 1f)
         {

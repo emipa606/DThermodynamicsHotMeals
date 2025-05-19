@@ -31,6 +31,10 @@
         <name>VCE_DeepFriedFish</name>
         <type>HotMeal</type>
       </li>
+      <li>
+        <name>VCE_Cheese</name>
+        <type>NonPerishable</type>
+      </li>
     </Meals>
   </Operation>
 </Patch>

@@ -77,7 +77,7 @@ internal class Thought_MealTemp : Thought_Memory
         return false;
     }
 
-    public int GetMoodValue()
+    private int GetMoodValue()
     {
         if (comp == null)
         {

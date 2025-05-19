@@ -10,24 +10,25 @@ namespace DHotMeals;
 public static class MealAssigner
 {
     public static readonly Dictionary<string, MealTempTypes>
-        fixedTypes = new Dictionary<string, MealTempTypes>(); // read by patch operations
+        fixedTypes = new(); // read by patch operations
 
-    public static readonly List<ThingCategoryDef> hotMealCats = [];
-    public static readonly List<ThingCategoryDef> coldMealCats = [];
-    public static readonly List<ThingCategoryDef> hotDrinkCats = [];
-    public static readonly List<ThingCategoryDef> coldDrinkCats = [];
-    public static readonly List<ThingCategoryDef> RTMealCats = [];
-    public static readonly List<ThingCategoryDef> nonperishCats = [];
-    public static readonly List<ThingCategoryDef> rawTastyCats = [];
+    private static readonly List<ThingCategoryDef> hotMealCats = [];
+    private static readonly List<ThingCategoryDef> coldMealCats = [];
+    private static readonly List<ThingCategoryDef> hotDrinkCats = [];
+    private static readonly List<ThingCategoryDef> coldDrinkCats = [];
+    private static readonly List<ThingCategoryDef> RTMealCats = [];
+    private static readonly List<ThingCategoryDef> nonperishCats = [];
+    private static readonly List<ThingCategoryDef> rawTastyCats = [];
 
 
-    public static readonly List<string> excludedCatDefs =
+    private static readonly List<string> excludedCatDefs =
     [
         "RC2_GrainsRaw",
         "RC2_VegetablesRaw",
         "PlantFoodRaw",
         "MeatRaw",
         "RC2_FoodProcessed",
+        "VCE_Cheese",
         "Drugs",
         "Plants",
         "Crops",
@@ -50,7 +51,7 @@ public static class MealAssigner
         ];
     }
 
-    public static ThingCategoryDef GenerateCategory(ThingCategoryDef tc, string newDef, ThingCategoryDef parent)
+    private static ThingCategoryDef GenerateCategory(ThingCategoryDef tc, string newDef, ThingCategoryDef parent)
     {
         var newTCD = new ThingCategoryDef
         {
@@ -64,7 +65,7 @@ public static class MealAssigner
         return newTCD;
     }
 
-    public static void HijackCategory(ThingDef def, ThingCategoryDef tc, List<ThingCategoryDef> newCats,
+    private static void HijackCategory(ThingDef def, ThingCategoryDef tc, List<ThingCategoryDef> newCats,
         ThingCategoryDef parent, string postfix)
     {
         if (tc == null || tc == ThingCategoryDefOf.Root)
@@ -112,7 +113,7 @@ public static class MealAssigner
         }
     }
 
-    public static void HijackDef(ThingDef def, ThingCategoryDef tc, ThingCategoryDef newCat = null)
+    private static void HijackDef(ThingDef def, ThingCategoryDef tc, ThingCategoryDef newCat = null)
     {
         def.thingCategories.Remove(tc);
         tc.childThingDefs.Remove(def);
@@ -125,7 +126,7 @@ public static class MealAssigner
         newCat.childThingDefs.Add(def);
     }
 
-    public static void HijackCategories(ThingDef def, List<ThingCategoryDef> newCats, ThingCategoryDef parent,
+    private static void HijackCategories(ThingDef def, List<ThingCategoryDef> newCats, ThingCategoryDef parent,
         string postfix)
     {
         if (def.thingCategories == null)

@@ -9,7 +9,7 @@ public class CompProperties_DTemperature : CompProperties
 
     public float initialTemp = 21f; // 70 fahrenheit
     public bool likesHeat = true;
-    public DTemperatureLevels tempLevels = new DTemperatureLevels(); // ~100 fahrenheit
+    public DTemperatureLevels tempLevels = new(); // ~100 fahrenheit
 
     public CompProperties_DTemperature()
     {
