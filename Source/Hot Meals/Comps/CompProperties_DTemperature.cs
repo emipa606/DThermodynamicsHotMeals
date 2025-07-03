@@ -11,7 +11,7 @@ public class CompProperties_DTemperature : CompProperties
     public bool likesHeat = true;
     public DTemperatureLevels tempLevels = new(); // ~100 fahrenheit
 
-    public CompProperties_DTemperature()
+    protected CompProperties_DTemperature()
     {
         compClass = typeof(CompDTemperature);
         if (tickRate == -1)

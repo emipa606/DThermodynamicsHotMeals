@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>ERN_Coffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>ERN_Tea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>ERN_HotChocolate</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>ERN_Latte</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>ERN_Mocha</name>
+        <type>HotDrink</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

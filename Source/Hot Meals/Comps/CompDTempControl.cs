@@ -17,7 +17,7 @@ public class CompDTempControl : ThingComp
 
     public float targetTemperature = -99999f;
 
-    public CompProperties_DTempControl Props => (CompProperties_DTempControl)props;
+    private CompProperties_DTempControl Props => (CompProperties_DTempControl)props;
 
     public override void PostSpawnSetup(bool respawningAfterLoad)
     {
@@ -51,7 +51,7 @@ public class CompDTempControl : ThingComp
         var offset2 = RoundedToCurrentTempModeOffset(-10f);
         yield return new Command_Action
         {
-            action = delegate { InterfaceChangeTargetTemperature(offset2); },
+            action = delegate { interfaceChangeTargetTemperature(offset2); },
             defaultLabel = offset2.ToStringTemperatureOffset("F0"),
             defaultDesc = "CommandLowerTempDesc".Translate(),
             hotKey = KeyBindingDefOf.Misc5,
@@ -60,7 +60,7 @@ public class CompDTempControl : ThingComp
         var offset3 = RoundedToCurrentTempModeOffset(-1f);
         yield return new Command_Action
         {
-            action = delegate { InterfaceChangeTargetTemperature(offset3); },
+            action = delegate { interfaceChangeTargetTemperature(offset3); },
             defaultLabel = offset3.ToStringTemperatureOffset("F0"),
             defaultDesc = "CommandLowerTempDesc".Translate(),
             hotKey = KeyBindingDefOf.Misc4,
@@ -72,7 +72,7 @@ public class CompDTempControl : ThingComp
             {
                 targetTemperature = 21f;
                 SoundDefOf.Tick_Tiny.PlayOneShotOnCamera();
-                ThrowCurrentTemperatureText();
+                throwCurrentTemperatureText();
             },
             defaultLabel = "CommandResetTemp".Translate(),
             defaultDesc = "CommandResetTempDesc".Translate(),
@@ -82,7 +82,7 @@ public class CompDTempControl : ThingComp
         var offset4 = RoundedToCurrentTempModeOffset(1f);
         yield return new Command_Action
         {
-            action = delegate { InterfaceChangeTargetTemperature(offset4); },
+            action = delegate { interfaceChangeTargetTemperature(offset4); },
             defaultLabel = $"+{offset4.ToStringTemperatureOffset("F0")}",
             defaultDesc = "CommandRaiseTempDesc".Translate(),
             hotKey = KeyBindingDefOf.Misc2,
@@ -91,7 +91,7 @@ public class CompDTempControl : ThingComp
         var offset = RoundedToCurrentTempModeOffset(10f);
         yield return new Command_Action
         {
-            action = delegate { InterfaceChangeTargetTemperature(offset); },
+            action = delegate { interfaceChangeTargetTemperature(offset); },
             defaultLabel = $"+{offset.ToStringTemperatureOffset("F0")}",
             defaultDesc = "CommandRaiseTempDesc".Translate(),
             hotKey = KeyBindingDefOf.Misc3,
@@ -99,15 +99,15 @@ public class CompDTempControl : ThingComp
         };
     }
 
-    private void InterfaceChangeTargetTemperature(float offset)
+    private void interfaceChangeTargetTemperature(float offset)
     {
         SoundDefOf.DragSlider.PlayOneShotOnCamera();
         targetTemperature += offset;
         targetTemperature = Mathf.Clamp(targetTemperature, Props.minTargetTemperature, Props.maxTargetTemperature);
-        ThrowCurrentTemperatureText();
+        throwCurrentTemperatureText();
     }
 
-    private void ThrowCurrentTemperatureText()
+    private void throwCurrentTemperatureText()
     {
         MoteMaker.ThrowText(parent.TrueCenter() + new Vector3(0.5f, 0f, 0.5f), parent.Map,
             targetTemperature.ToStringTemperature("F0"), Color.white);

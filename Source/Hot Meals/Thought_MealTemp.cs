@@ -22,7 +22,7 @@ internal class Thought_MealTemp : Thought_Memory
 
     public override float MoodOffset()
     {
-        return GetMoodValue();
+        return getMoodValue();
     }
 
     public override bool GroupsWith(Thought other)
@@ -52,12 +52,12 @@ internal class Thought_MealTemp : Thought_Memory
         {
             if (thoughts.memories.OldestMemoryInGroup(this) is Thought_MealTemp thought_Memory)
             {
-                var moodVal = GetMoodValue();
+                var moodVal = getMoodValue();
                 if (moodVal == 0) // this has 0 value, don't add it
                 {
                     showBubble = false;
                 }
-                else if (thought_Memory.GetMoodValue() == moodVal) // other value is not 0 and equals this value
+                else if (thought_Memory.getMoodValue() == moodVal) // other value is not 0 and equals this value
                 {
                     showBubble = thought_Memory.age > thought_Memory.def.DurationTicks / 2;
                     thought_Memory.Renew();
@@ -77,7 +77,7 @@ internal class Thought_MealTemp : Thought_Memory
         return false;
     }
 
-    private int GetMoodValue()
+    private int getMoodValue()
     {
         if (comp == null)
         {

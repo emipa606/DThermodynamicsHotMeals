@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>VCE_DeepFriedSushi</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>VCE_Chirashizushi</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Norimaki</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Uramaki</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Nigiri</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Temaki</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Futomaki</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Gunkanmaki</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>VCE_Oshizushi</name>
+        <type>RoomTempMeal</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

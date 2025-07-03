@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingCategoryDef>
+    <defName>DFoodRawTasty</defName>
+    <label>Edible raw</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/FruitFoodRaw</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>DFoodHotMeals</defName>
+    <label>hot food</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/HotMeal</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>DFoodColdMeals</defName>
+    <label>cold food</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/ColdMeal</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>DFoodRTMeals</defName>
+    <label>lukewarm food</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/RTMeal</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>DFoodHotDrinks</defName>
+    <label>hot drinks</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/HotDrink</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>DFoodColdDrinks</defName>
+    <label>cold drinks</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/ColdDrink</iconPath>
+  </ThingCategoryDef>
+  <ThingCategoryDef>
+    <defName>DFoodNonperishable</defName>
+    <label>Nonperishable</label>
+    <parent>Foods</parent>
+    <resourceReadoutRoot>false</resourceReadoutRoot>
+    <iconPath>UI/Icons/ThingCategories/NonPerishable</iconPath>
+  </ThingCategoryDef>
+</Defs>

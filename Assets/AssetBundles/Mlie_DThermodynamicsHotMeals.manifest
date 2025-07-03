@@ -1,0 +1,38 @@
+ManifestFileVersion: 0
+CRC: 1741337522
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: b6a36a673140c673c834598180ad6182
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 2612ac43db082a73502ee80f2eceb73f
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: b6a36a673140c673c834598180ad6182
+HashAppended: 0
+ClassTypes:
+- Class: 28
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Misc/DHeatLamp_north.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/FruitFoodRaw.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Misc/DHeatBar_north.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Mote/ThoughtSymbol/TempJustRight.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Misc/DHeatBar_east.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Misc/DHeatLamp_east.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/ColdMeal.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/HotMeal.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/NonPerishable.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Mote/ThoughtSymbol/TempTooHot.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Misc/DHeatLamp_south.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Production/DMicrowave_east.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Mote/ThoughtSymbol/TempTooCold.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Production/DMicrowave_north.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/ColdDrink.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Production/DMicrowave_south.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/Things/Building/Misc/DHeatBar_south.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/HotDrink.png
+- Assets/Data/Mlie.DThermodynamicsHotMeals/Textures/UI/Icons/ThingCategories/RTMeal.png
+Dependencies: []

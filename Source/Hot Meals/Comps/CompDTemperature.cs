@@ -14,7 +14,7 @@ public class CompDTemperature : ThingComp
 
     public virtual CompProperties_DTemperature PropsTemp => (CompProperties_DTemperature)props;
 
-    public virtual DTemperatureLevels Levels => PropsTemp.tempLevels;
+    protected virtual DTemperatureLevels Levels => PropsTemp.tempLevels;
 
     public virtual double AmbientTemperature
     {
@@ -82,7 +82,7 @@ public class CompDTemperature : ThingComp
         return "";
     }
 
-    public virtual bool PawnIsCarrying()
+    protected virtual bool PawnIsCarrying()
     {
         if (parent.ParentHolder == null)
         {
@@ -117,7 +117,7 @@ public class CompDTemperature : ThingComp
     }
 
 
-    public virtual void tempTick(int numTicks)
+    protected virtual void tempTick(int numTicks)
     {
         Diffuse(AmbientTemperature, numTicks);
     }

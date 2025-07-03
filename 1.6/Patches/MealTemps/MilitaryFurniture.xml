@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>CP_MaxiCola</name>
+        <type>ColdDrink</type>
+      </li>
+      <li>
+        <name>CP_NukaCola</name>
+        <type>ColdDrink</type>
+      </li>
+      <li>
+        <name>CP_NukaColaQuantum</name>
+        <type>ColdDrink</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

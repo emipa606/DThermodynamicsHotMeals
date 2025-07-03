@@ -51,7 +51,7 @@ public static class MealAssigner
         ];
     }
 
-    private static ThingCategoryDef GenerateCategory(ThingCategoryDef tc, string newDef, ThingCategoryDef parent)
+    private static ThingCategoryDef generateCategory(ThingCategoryDef tc, string newDef, ThingCategoryDef parent)
     {
         var newTCD = new ThingCategoryDef
         {
@@ -85,7 +85,7 @@ public static class MealAssigner
 
         if (tc == ThingCategoryDefOf.Foods)
         {
-            HijackDef(def, tc, parent);
+            hijackDef(def, tc, parent);
             return;
         }
 
@@ -103,17 +103,17 @@ public static class MealAssigner
         var found = newCats.Find(x => x.defName == newDef);
         if (found == null)
         {
-            found = GenerateCategory(tc, newDef, parent);
+            found = generateCategory(tc, newDef, parent);
             newCats.Add(found);
         }
 
         if (def != null)
         {
-            HijackDef(def, tc, found);
+            hijackDef(def, tc, found);
         }
     }
 
-    private static void HijackDef(ThingDef def, ThingCategoryDef tc, ThingCategoryDef newCat = null)
+    private static void hijackDef(ThingDef def, ThingCategoryDef tc, ThingCategoryDef newCat = null)
     {
         def.thingCategories.Remove(tc);
         tc.childThingDefs.Remove(def);
@@ -126,7 +126,7 @@ public static class MealAssigner
         newCat.childThingDefs.Add(def);
     }
 
-    private static void HijackCategories(ThingDef def, List<ThingCategoryDef> newCats, ThingCategoryDef parent,
+    private static void hijackCategories(ThingDef def, List<ThingCategoryDef> newCats, ThingCategoryDef parent,
         string postfix)
     {
         if (def.thingCategories == null)
@@ -146,7 +146,7 @@ public static class MealAssigner
                 def.defName is "MealSimple" or "MealFine" or "MealLavish" &&
                 tc.defName == "FoodMeals")
             {
-                HijackDef(def, tc);
+                hijackDef(def, tc);
                 continue;
             }
 
@@ -171,7 +171,7 @@ public static class MealAssigner
             def.tickerType = TickerType.Rare;
         }
 
-        HijackCategories(def, hotDrinkCats, Base.DefOf.DFoodHotDrinks, "_hd");
+        hijackCategories(def, hotDrinkCats, Base.DefOf.DFoodHotDrinks, "_hd");
     }
 
     public static void AddColdDrink(ThingDef def)
@@ -191,7 +191,7 @@ public static class MealAssigner
             def.tickerType = TickerType.Rare;
         }
 
-        HijackCategories(def, coldDrinkCats, Base.DefOf.DFoodColdDrinks, "_cd");
+        hijackCategories(def, coldDrinkCats, Base.DefOf.DFoodColdDrinks, "_cd");
     }
 
     public static void AddColdMeal(ThingDef def)
@@ -211,7 +211,7 @@ public static class MealAssigner
             def.tickerType = TickerType.Rare;
         }
 
-        HijackCategories(def, coldMealCats, Base.DefOf.DFoodColdMeals, "_cm");
+        hijackCategories(def, coldMealCats, Base.DefOf.DFoodColdMeals, "_cm");
     }
 
     public static void AddHotMeal(ThingDef def)
@@ -230,7 +230,7 @@ public static class MealAssigner
             def.tickerType = TickerType.Rare;
         }
 
-        HijackCategories(def, hotMealCats, Base.DefOf.DFoodHotMeals, "_hm");
+        hijackCategories(def, hotMealCats, Base.DefOf.DFoodHotMeals, "_hm");
     }
 
     public static void AddRoomTemperatureMeal(ThingDef def)
@@ -250,19 +250,19 @@ public static class MealAssigner
             def.tickerType = TickerType.Rare;
         }
 
-        HijackCategories(def, RTMealCats, Base.DefOf.DFoodRTMeals, "_rtm");
+        hijackCategories(def, RTMealCats, Base.DefOf.DFoodRTMeals, "_rtm");
     }
 
     public static void AddNonperishableMeal(ThingDef def)
     {
         def.comps.Add(new CompProperties_DNoTemp("Nonperishable"));
-        HijackCategories(def, nonperishCats, Base.DefOf.DFoodNonperishable, "np");
+        hijackCategories(def, nonperishCats, Base.DefOf.DFoodNonperishable, "np");
     }
 
     public static void AddRawTastyMeal(ThingDef def)
     {
         def.comps.Add(new CompProperties_DNoTemp("Edible raw"));
-        HijackCategories(def, rawTastyCats, Base.DefOf.DFoodRawTasty, "rt");
+        hijackCategories(def, rawTastyCats, Base.DefOf.DFoodRawTasty, "rt");
     }
 
     public static void AddRawResource(ThingDef def)

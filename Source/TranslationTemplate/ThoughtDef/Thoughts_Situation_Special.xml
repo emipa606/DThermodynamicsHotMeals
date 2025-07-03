@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: consumed something -->
+  <DAteGoodThing.stages.consumed_something.label>consumed something</DAteGoodThing.stages.consumed_something.label>
+  <!-- EN: I consumed something -->
+  <DAteGoodThing.stages.consumed_something.description>I consumed something</DAteGoodThing.stages.consumed_something.description>
+  <!-- EN: consumed something -->
+  <DAteMeh.stages.consumed_something.label>consumed something</DAteMeh.stages.consumed_something.label>
+  <!-- EN: I consumed something -->
+  <DAteMeh.stages.consumed_something.description>I consumed something</DAteMeh.stages.consumed_something.description>
+  <!-- EN: consumed something -->
+  <DAteTooCold.stages.consumed_something.label>consumed something</DAteTooCold.stages.consumed_something.label>
+  <!-- EN: I consumed something -->
+  <DAteTooCold.stages.consumed_something.description>I consumed something</DAteTooCold.stages.consumed_something.description>
+  <!-- EN: consumed something -->
+  <DAteTooHot.stages.consumed_something.label>consumed something</DAteTooHot.stages.consumed_something.label>
+  <!-- EN: I consumed something -->
+  <DAteTooHot.stages.consumed_something.description>I consumed something</DAteTooHot.stages.consumed_something.description>
+</LanguageData>

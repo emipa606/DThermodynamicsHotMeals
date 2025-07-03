@@ -6,7 +6,7 @@ public class CompProperties_DTemperatureIngestible : CompProperties_DTemperature
     public bool okFrozen = false;
     public bool roomTemperature = false;
 
-    public CompProperties_DTemperatureIngestible()
+    protected CompProperties_DTemperatureIngestible()
     {
         compClass = typeof(CompDTemperatureIngestible);
     }

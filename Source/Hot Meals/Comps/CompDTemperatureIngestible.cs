@@ -12,12 +12,12 @@ public class CompDTemperatureIngestible : CompDTemperature
         return base.GetState(temp);
     }
 
-    public virtual ThoughtDef GetIngestMemory()
+    protected virtual ThoughtDef GetIngestMemory()
     {
         return null;
     }
 
-    public virtual void MakeIngestMemory(ThoughtDef memory, Pawn ingester)
+    protected virtual void MakeIngestMemory(ThoughtDef memory, Pawn ingester)
     {
     }
 

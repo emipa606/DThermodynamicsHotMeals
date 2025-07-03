@@ -7,9 +7,9 @@ public class CompDSecondLayer : ThingComp
 {
     private Graphic graphicInt;
 
-    public CompProperties_DSecondLayer Props => (CompProperties_DSecondLayer)props;
+    private CompProperties_DSecondLayer Props => (CompProperties_DSecondLayer)props;
 
-    public virtual Graphic Graphic
+    protected virtual Graphic Graphic
     {
         get
         {

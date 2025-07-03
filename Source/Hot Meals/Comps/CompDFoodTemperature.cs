@@ -8,7 +8,7 @@ namespace DHotMeals.Comps;
 
 public class CompDFoodTemperature : CompDTemperatureIngestible
 {
-    public double heatUpRate = 0.1;
+    private double heatUpRate = 0.1;
 
     public double initialHeatingTemp = 0f;
     public double targetCookingTemp;
@@ -176,45 +176,28 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
         }
 
         var negLevel = GetNegativeMoodEffect(temp);
-        if (negLevel == -3)
+        switch (negLevel)
         {
-            return "HoMe.frozensolid".Translate();
+            case -3:
+                return "HoMe.frozensolid".Translate();
+            case -2:
+                return "HoMe.toocold".Translate();
+            case -1:
+                return "HoMe.toochilly".Translate();
+            case 0:
+                return "HoMe.edible".Translate();
+            case 1:
+                return "HoMe.toowarm".Translate();
+            case 2:
+                return "HoMe.toohot".Translate();
+            case 3:
+                return "HoMe.scalding".Translate();
+            default:
+                return "";
         }
-
-        if (negLevel == -2)
-        {
-            return "HoMe.toocold".Translate();
-        }
-
-        if (negLevel == -1)
-        {
-            return "HoMe.toochilly".Translate();
-        }
-
-        if (negLevel == 0)
-        {
-            return "HoMe.edible".Translate();
-        }
-
-        if (negLevel == 1)
-        {
-            return "HoMe.toowarm".Translate();
-        }
-
-        if (negLevel == 2)
-        {
-            return "HoMe.toohot".Translate();
-        }
-
-        if (negLevel == 3)
-        {
-            return "HoMe.scalding".Translate();
-        }
-
-        return "";
     }
 
-    public override ThoughtDef GetIngestMemory()
+    protected override ThoughtDef GetIngestMemory()
     {
         if (GetPositiveMoodEffect(curTemp) > 0)
         {
@@ -233,7 +216,7 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
         }
     }
 
-    public override void MakeIngestMemory(ThoughtDef memory, Pawn ingester)
+    protected override void MakeIngestMemory(ThoughtDef memory, Pawn ingester)
     {
         var foodMem = (Thought_MealTemp)ThoughtMaker.MakeThought(memory);
         foodMem.createdTemp = curTemp;

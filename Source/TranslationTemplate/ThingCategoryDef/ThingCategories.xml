@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: cold drinks -->
+  <DFoodColdDrinks.label>cold drinks</DFoodColdDrinks.label>
+  <!-- EN: cold food -->
+  <DFoodColdMeals.label>cold food</DFoodColdMeals.label>
+  <!-- EN: hot drinks -->
+  <DFoodHotDrinks.label>hot drinks</DFoodHotDrinks.label>
+  <!-- EN: hot food -->
+  <DFoodHotMeals.label>hot food</DFoodHotMeals.label>
+  <!-- EN: Nonperishable -->
+  <DFoodNonperishable.label>Nonperishable</DFoodNonperishable.label>
+  <!-- EN: Edible raw -->
+  <DFoodRawTasty.label>Edible raw</DFoodRawTasty.label>
+  <!-- EN: lukewarm food -->
+  <DFoodRTMeals.label>lukewarm food</DFoodRTMeals.label>
+</LanguageData>

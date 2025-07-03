@@ -29,29 +29,29 @@ internal class StatWorker_Temperature : StatWorker
         return "";
     }
 
-    private static string InIdealRange()
+    private static string inIdealRange()
     {
         return "HoMe.Inidealrange".Translate();
     }
 
-    private static string WillNeverReach()
+    private static string willNeverReach()
     {
         return "HoMe.Neverreach".Translate();
     }
 
-    private static string HoursToIdeal(CompDTemperatureIngestible comp, double idealTemp)
+    private static string hoursToIdeal(CompDTemperatureIngestible comp, double idealTemp)
     {
         return
             "HoMe.Willreach".Translate($"{ThermodynamicsBase.HoursToTargetTemp(comp, idealTemp):f1}");
     }
 
-    private static string HoursInIdeal(CompDTemperatureIngestible comp, double changeThreshold)
+    private static string hoursInIdeal(CompDTemperatureIngestible comp, double changeThreshold)
     {
         return
             "HoMe.Willremain".Translate($"{ThermodynamicsBase.HoursToTargetTemp(comp, changeThreshold):f1}");
     }
 
-    private static string HoursToAmbient(CompDTemperature comp)
+    private static string hoursToAmbient(CompDTemperature comp)
     {
         return
             "HoMe.Willreachambient".Translate(((float)comp.AmbientTemperature).ToStringTemperature(),
@@ -89,7 +89,7 @@ internal class StatWorker_Temperature : StatWorker
             var result = Math.Sign(shift) * step * HotMealsSettings.diffusionModifier;
             s +=
                 "HoMe.diffusing".Translate(((float)result).ToStringTemperatureOffset());
-            s += HoursToAmbient(comp);
+            s += hoursToAmbient(comp);
             if (comp is not CompDTemperatureIngestible comp2)
             {
                 return s;
@@ -104,30 +104,30 @@ internal class StatWorker_Temperature : StatWorker
                 {
                     if (ambient < comp2.PropsTemp.tempLevels.goodTemp)
                     {
-                        s += HoursInIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
+                        s += hoursInIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
                     }
                     else if (ambient > comp2.PropsTemp.tempLevels.okTemp)
                     {
-                        s += HoursInIdeal(comp2, comp2.PropsTemp.tempLevels.okTemp);
+                        s += hoursInIdeal(comp2, comp2.PropsTemp.tempLevels.okTemp);
                     }
                     else
                     {
-                        s += InIdealRange();
+                        s += inIdealRange();
                     }
                 }
                 else if (comp2.curTemp < comp2.PropsTemp.tempLevels.goodTemp &&
                          ambient > comp2.PropsTemp.tempLevels.goodTemp)
                 {
-                    s += HoursToIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
+                    s += hoursToIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
                 }
                 else if (comp2.curTemp > comp2.PropsTemp.tempLevels.okTemp &&
                          ambient < comp2.PropsTemp.tempLevels.okTemp)
                 {
-                    s += HoursToIdeal(comp2, comp2.PropsTemp.tempLevels.okTemp);
+                    s += hoursToIdeal(comp2, comp2.PropsTemp.tempLevels.okTemp);
                 }
                 else
                 {
-                    s += WillNeverReach();
+                    s += willNeverReach();
                 }
             }
             else if (comp2.PropsTemp.likesHeat)
@@ -136,20 +136,20 @@ internal class StatWorker_Temperature : StatWorker
                 {
                     if (ambient < comp2.PropsTemp.tempLevels.goodTemp)
                     {
-                        s += HoursInIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
+                        s += hoursInIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
                     }
                     else
                     {
-                        s += InIdealRange();
+                        s += inIdealRange();
                     }
                 }
                 else if (ambient > comp2.PropsTemp.tempLevels.goodTemp)
                 {
-                    s += HoursToIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
+                    s += hoursToIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
                 }
                 else
                 {
-                    s += WillNeverReach();
+                    s += willNeverReach();
                 }
             }
             else
@@ -159,10 +159,10 @@ internal class StatWorker_Temperature : StatWorker
                     switch (comp2.AmbientTemperature)
                     {
                         case > 0f:
-                            s += HoursToIdeal(comp2, 0);
+                            s += hoursToIdeal(comp2, 0);
                             break;
                         case <= 0f:
-                            s += WillNeverReach();
+                            s += willNeverReach();
                             break;
                     }
                 }
@@ -170,20 +170,20 @@ internal class StatWorker_Temperature : StatWorker
                 {
                     if (ambient > comp2.PropsTemp.tempLevels.goodTemp)
                     {
-                        s += HoursInIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
+                        s += hoursInIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
                     }
                     else
                     {
-                        s += InIdealRange();
+                        s += inIdealRange();
                     }
                 }
                 else if (ambient < comp2.PropsTemp.tempLevels.goodTemp)
                 {
-                    s += HoursToIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
+                    s += hoursToIdeal(comp2, comp2.PropsTemp.tempLevels.goodTemp);
                 }
                 else
                 {
-                    s += WillNeverReach();
+                    s += willNeverReach();
                 }
             }
         }

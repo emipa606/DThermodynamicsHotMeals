@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="BuildingBase">
+    <defName>DMicrowave</defName>
+    <label>microwave</label>
+    <description>A microwave for rapidly heating up food.</description>
+    <minifiedDef>MinifiedThing</minifiedDef>
+    <graphicData>
+      <texPath>Things/Building/Production/DMicrowave</texPath>
+      <graphicClass>Graphic_Multi</graphicClass>
+      <drawSize>1.25, 1</drawSize>
+    </graphicData>
+    <castEdgeShadows>true</castEdgeShadows>
+    <staticSunShadowHeight>0.20</staticSunShadowHeight>
+    <costList>
+      <Steel>50</Steel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
+    <size>1,1</size>
+    <constructEffect>ConstructMetal</constructEffect>
+    <altitudeLayer>BuildingOnTop</altitudeLayer>
+    <fillPercent>0.50</fillPercent>
+    <statBases>
+      <WorkToBuild>1800</WorkToBuild>
+      <MaxHitPoints>100</MaxHitPoints>
+      <Mass>10</Mass>
+      <Flammability>1.0</Flammability>
+      <WorkTableWorkSpeedFactor>4</WorkTableWorkSpeedFactor>
+    </statBases>
+    <designationCategory>Temperature</designationCategory>
+    <passability>PassThroughOnly</passability>
+    <pathCost>70</pathCost>
+    <hasInteractionCell>True</hasInteractionCell>
+    <interactionCellOffset>(0,0, 1)</interactionCellOffset>
+    <surfaceType>Item</surfaceType>
+    <constructionSkillPrerequisite>3</constructionSkillPrerequisite>
+    <clearBuildingArea>false</clearBuildingArea>
+    <rotatable>true</rotatable>
+    <thingCategories>
+      <li>BuildingsProduction</li>
+    </thingCategories>
+    <defaultPlacingRot>South</defaultPlacingRot>
+    <building>
+      <isEdifice>false</isEdifice>
+      <isMealSource>true</isMealSource>
+    </building>
+    <comps>
+      <li Class="CompProperties_Power">
+        <compClass>CompPowerTrader</compClass>
+        <shortCircuitInRain>true</shortCircuitInRain>
+        <basePowerConsumption>100</basePowerConsumption>
+      </li>
+      <li Class="CompProperties_Flickable" />
+      <li Class="CompProperties_HeatPusher">
+        <compClass>CompHeatPusherPowered</compClass>
+        <heatPerSecond>1</heatPerSecond>
+      </li>
+    </comps>
+    <placeWorkers>
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+    </placeWorkers>
+    <drawPlaceWorkersWhileSelected>true</drawPlaceWorkersWhileSelected>
+    <designationHotKey>Misc4</designationHotKey>
+    <researchPrerequisites>
+      <li>MicroelectronicsBasics</li>
+    </researchPrerequisites>
+  </ThingDef>
+</Defs>

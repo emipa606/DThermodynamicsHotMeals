@@ -21,11 +21,11 @@ public static class Toils_HeatMeal
 
         var result = GenClosest.ClosestThing_Regionwise_ReachablePrioritized(searchNear.PositionHeld,
             searchNear.MapHeld, ThingRequest.ForGroup(ThingRequestGroup.BuildingArtificial),
-            PathEndMode.Touch, TraverseParms.For(pawn), searchRadius, Valid,
+            PathEndMode.Touch, TraverseParms.For(pawn), searchRadius, valid,
             thing => thing.GetStatValue(StatDefOf.WorkTableWorkSpeedFactor));
         return result;
 
-        bool Valid(Thing m)
+        bool valid(Thing m)
         {
             if (m.def.building is not { isMealSource: true })
             {
@@ -73,7 +73,7 @@ public static class Toils_HeatMeal
             comp.SetHeatUpRate(heater);
         };
 
-        toil.tickAction = delegate
+        toil.tickIntervalAction = delegate(int delta)
         {
             var actor = toil.actor;
             var curJob = actor.jobs.curJob;
@@ -97,7 +97,7 @@ public static class Toils_HeatMeal
                 billGiverWithTickAction.UsedThisTick();
             }
 
-            actor.GainComfortFromCellIfPossible(true);
+            actor.GainComfortFromCellIfPossible(delta, true);
             comp.HeatUp();
         };
         toil.defaultCompleteMode = ToilCompleteMode.Never;

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+  <!-- EN: food type -->
+  <DFoodTypeStat.label>food type</DFoodTypeStat.label>
+  <!-- EN: The type and temperature preference of this food. -->
+  <DFoodTypeStat.description>The type and temperature preference of this food.</DFoodTypeStat.description>
+  <!-- EN: food type -->
+  <DFoodTypeStat.labelForFullStatList>food type</DFoodTypeStat.labelForFullStatList>
+  <!-- EN: current temperature -->
+  <DTempStat.label>current temperature</DTempStat.label>
+  <!-- EN: The current temperature of this thing. -->
+  <DTempStat.description>The current temperature of this thing.</DTempStat.description>
+  <!-- EN: current temperature -->
+  <DTempStat.labelForFullStatList>current temperature</DTempStat.labelForFullStatList>
+</LanguageData>

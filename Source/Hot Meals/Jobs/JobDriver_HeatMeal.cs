@@ -15,7 +15,7 @@ internal class JobDriver_HeatMeal : JobDriver
 
     protected override IEnumerable<Toil> MakeNewToils()
     {
-        yield return ReserveFood();
+        yield return reserveFood();
         yield return Toils_Goto.GotoThing(TargetIndex.A, PathEndMode.ClosestTouch)
             .FailOnDespawnedNullOrForbidden(TargetIndex.A);
         yield return Toils_Ingest.PickupIngestible(TargetIndex.A, pawn);
@@ -56,7 +56,7 @@ internal class JobDriver_HeatMeal : JobDriver
     }
 
 
-    private Toil ReserveFood()
+    private Toil reserveFood()
     {
         return new Toil
         {

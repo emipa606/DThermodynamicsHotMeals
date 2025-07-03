@@ -2,8 +2,13 @@
   "Continued": true,
   "CanAdd": "0",
   "CanRemove": "2",
-  "PreviewVersion": "1.5",
+  "PreviewVersion": "1.6",
   "SocialImageSet": true,
-  "LastXmlCleaning": "2025-05-19T22:46:03.2786432+02:00",
-  "SearchTags": " food essentials"
+  "LastXmlCleaning": "2025-07-03T22:34:40.6051213+02:00",
+  "SearchTags": " food essentials",
+  "Patches": true,
+  "Defs": true,
+  "Assemblies": true,
+  "LinesOfCode": 91322.0,
+  "LinesOfXML": 31365.0
 }

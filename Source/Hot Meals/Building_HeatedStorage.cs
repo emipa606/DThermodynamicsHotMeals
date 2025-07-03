@@ -7,11 +7,11 @@ namespace DThermodynamicsCore;
 
 internal class Building_HeatedStorage : Building_Storage
 {
-    public static float slowRotRateAmount = -99999f;
-    public static float unrefrigeratedRotRate = -99999f;
-    public CompDTempControl compDTempControl;
-    public CompPowerTrader compPowerTrader;
-    public CompRefuelable compRefuelable;
+    private static float slowRotRateAmount = -99999f;
+    private static float unrefrigeratedRotRate = -99999f;
+    private CompDTempControl compDTempControl;
+    private CompPowerTrader compPowerTrader;
+    private CompRefuelable compRefuelable;
 
     public override void SpawnSetup(Map map, bool respawningAfterLoad)
     {
@@ -30,7 +30,7 @@ internal class Building_HeatedStorage : Building_Storage
         }
     }
 
-    public virtual float GetTargetTemp()
+    protected virtual float GetTargetTemp()
     {
         if (compDTempControl != null)
         {
@@ -54,7 +54,7 @@ internal class Building_HeatedStorage : Building_Storage
         newItem.Rotation = Rotation;
     }
 
-    public virtual void ChangeHeat(int ticks)
+    protected virtual void ChangeHeat(int ticks)
     {
         if (!IsActive())
         {
@@ -85,7 +85,7 @@ internal class Building_HeatedStorage : Building_Storage
         }
     }
 
-    public override void Tick()
+    protected override void Tick()
     {
         base.Tick();
         ChangeHeat(1);

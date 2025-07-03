@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <StatCategoryDef>
+    <defName>DThermodynamicsStatCat</defName>
+    <label>Temperature</label>
+    <displayOrder>13</displayOrder>
+    <displayAllByDefault>true</displayAllByDefault>
+  </StatCategoryDef>
+  <StatDef>
+    <defName>DTempStat</defName>
+    <workerClass>DThermodynamicsCore.Stats.StatWorker_Temperature</workerClass>
+    <label>current temperature</label>
+    <labelForFullStatList>current temperature</labelForFullStatList>
+    <description>The current temperature of this thing.</description>
+    <category>DThermodynamicsStatCat</category>
+    <toStringStyle>FloatTwo</toStringStyle>
+    <hideAtValue>-9999</hideAtValue>
+    <!--<showIfUndefined>false</showIfUndefined>-->
+    <displayPriorityInCategory>1</displayPriorityInCategory>
+  </StatDef>
+  <StatDef>
+    <defName>DFoodTypeStat</defName>
+    <workerClass>DHotMeals.StatWorker_FoodType</workerClass>
+    <label>food type</label>
+    <labelForFullStatList>food type</labelForFullStatList>
+    <description>The type and temperature preference of this food.</description>
+    <category>DThermodynamicsStatCat</category>
+    <hideAtValue>-1</hideAtValue>
+    <!--<showIfUndefined>false</showIfUndefined>-->
+    <displayPriorityInCategory>2</displayPriorityInCategory>
+  </StatDef>
+</Defs>
