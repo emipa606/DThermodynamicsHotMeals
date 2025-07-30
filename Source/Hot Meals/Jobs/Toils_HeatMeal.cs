@@ -98,7 +98,7 @@ public static class Toils_HeatMeal
             }
 
             actor.GainComfortFromCellIfPossible(delta, true);
-            comp.HeatUp();
+            comp.HeatUp(delta);
         };
         toil.defaultCompleteMode = ToilCompleteMode.Never;
         var cook = DefDatabase<EffecterDef>.GetNamed("Cook");

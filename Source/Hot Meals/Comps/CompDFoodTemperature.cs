@@ -28,9 +28,9 @@ public class CompDFoodTemperature : CompDTemperatureIngestible
         }
     }
 
-    public virtual void HeatUp()
+    public virtual void HeatUp(int delta)
     {
-        curTemp += heatUpRate;
+        curTemp += heatUpRate * delta;
     }
 
     public string GetFoodType()
