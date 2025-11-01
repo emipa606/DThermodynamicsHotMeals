@@ -4,12 +4,12 @@
   "CanRemove": "2",
   "PreviewVersion": "1.6",
   "SocialImageSet": true,
-  "LastXmlCleaning": "2025-07-30T20:47:26.3360932+02:00",
+  "LastXmlCleaning": "2025-11-01T21:05:34.4609736+01:00",
   "SearchTags": " food essentials",
   "Patches": true,
   "Defs": true,
   "Assemblies": true,
-  "LinesOfCode": 91344,
+  "LinesOfCode": 91694,
   "LinesOfXML": 31365,
   "CodeBaseSize": 80
 }

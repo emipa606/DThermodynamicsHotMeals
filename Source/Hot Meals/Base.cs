@@ -12,6 +12,7 @@ public static class Base
 {
     public static readonly bool VGPRunning;
     public static readonly bool RimFridgeRunning;
+    public static readonly bool AdaptiveStorageRunning;
     public static readonly Type CompRefrigeratorType;
     public static readonly FieldInfo RimFridgeTempField;
 
@@ -23,6 +24,7 @@ public static class Base
         }
 
         RimFridgeRunning = ModLister.GetActiveModWithIdentifier("rimfridge.kv.rw", true) != null;
+        AdaptiveStorageRunning = ModLister.GetActiveModWithIdentifier("adaptive.storage.framework", true) != null;
 
         if (RimFridgeRunning)
         {

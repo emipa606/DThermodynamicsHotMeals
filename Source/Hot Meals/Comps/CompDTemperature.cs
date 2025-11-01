@@ -22,9 +22,14 @@ public class CompDTemperature : ThingComp
         {
             if (parent.Spawned)
             {
-                if (!Base.RimFridgeRunning)
+                if (!Base.RimFridgeRunning && !Base.AdaptiveStorageRunning)
                 {
                     return GenTemperature.GetTemperatureForCell(parent.Position, parent.Map);
+                }
+
+                if (Base.AdaptiveStorageRunning)
+                {
+                    return parent.AmbientTemperature;
                 }
 
                 var thingList = parent.PositionHeld.GetThingList(parent.MapHeld);

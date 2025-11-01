@@ -1,6 +1,6 @@
 # [[D] Thermodynamics - Hot Meals (Continued)](https://steamcommunity.com/sharedfiles/filedetails/?id=2909103255)
 
-![Image](https://i.imgur.com/buuPQel.png)
+![Image](https://i.postimg.cc/1X4HT06h/Info.png)
 
 Update of Dametris mod
 https://steamcommunity.com/sharedfiles/filedetails/?id=2110968173
@@ -12,14 +12,14 @@ https://steamcommunity.com/sharedfiles/filedetails/?id=2558277446
 **Includes [D] Thermodynamics - Core since this mod seems to be all it was used for
 Also included my patch for [RimFridge](https://steamcommunity.com/sharedfiles/filedetails/?id=2878183338)**
 
-![Image](https://i.imgur.com/pufA0kM.png)
+![Image](https://i.postimg.cc/8csH3dWV/Notice.png)
 	
-![Image](https://i.imgur.com/Z4GOv8H.png)
+![Image](https://i.postimg.cc/hvhrw8xB/Original-Description.png)
 
 # Overview
 
 Give you a warm feeling? Leave a like!
-![Image](https://i.imgur.com/FcAqtoA.png)
+![Image](https://i.postimg.cc/QtBtmX9f/FcAqtoA.png)
 
 ## Designed for Rimworld 1.1, 1.2 
 
@@ -68,16 +68,16 @@ Each food type's mood bonus or penalty will stack with other food types. Feed th
 ### So, how do you control food temperature?
 
 
-[img=https://i.imgur.com/2Apzm1p.gif][/img]
+[img=https://i.postimg.cc/BvTPDZFg/2Apzm1p.gif][/img]
 
 
 - Colonists can heat up food that's too cold at a nearby stove (or modded equivalent; can be disabled). This will be done automatically if they can find a nearby heating appliance.
 
 - With microelectronics completed, you can build a **microwave**, a dedicated appliance that reheats meals at super speed.
-[img=https://i.imgur.com/es3CIQ4.png][/img]
+[img=https://i.postimg.cc/RZRNVpzB/es3CIQ4.png][/img]
 
 - With electricity completed, you can build a **heat lamp**, which will keep any food stored in it warmed to the temperature you set.
-[img=https://i.imgur.com/vy6iWbp.png][/img]
+[img=https://i.postimg.cc/63z0rfRK/vy6iWbp.png][/img]
 (Also optionally slows food rot. Enable in Core settings.)
 
 - Cold drinks are good, as long as they're not frozen; put some beers in the fridge!
@@ -149,13 +149,13 @@ Let me know of any.
 - Chowder for the Heat Lamp texture.
 - Vanilla Furniture Expanded - Props and Decor for the Microwave texture.
 	
-![Image](https://i.imgur.com/PwoNOj4.png)
+![Image](https://i.postimg.cc/x8qR7GH9/Reporting-Issues.png)
 
 
 
 -  See if the the error persists if you just have this mod and its requirements active.
 -  If not, try adding your other mods until it happens again.
--  Post your error-log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) or the standalone [Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404) and command Ctrl+F12
+-  Always post your log using the [Log Uploader](https://steamcommunity.com/sharedfiles/filedetails/?id=2873415404)
 -  For best support, please use the Discord-channel for error-reporting.
 -  Do not report errors by making a discussion-thread, I get no notification of that.
 -  If you have the solution for a problem, please post it to the GitHub repository.

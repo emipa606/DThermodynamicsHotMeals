@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.6.2 - Added support for the heater/coolers using the Adaptive Storage Framework
+
+
 1.6.1 - Fix for variable tickrate
 
 
