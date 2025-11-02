@@ -27,14 +27,23 @@ public class CompDTemperature : ThingComp
                     return GenTemperature.GetTemperatureForCell(parent.Position, parent.Map);
                 }
 
-                if (Base.AdaptiveStorageRunning)
-                {
-                    return parent.AmbientTemperature;
-                }
-
                 var thingList = parent.PositionHeld.GetThingList(parent.MapHeld);
                 foreach (var thing in thingList)
                 {
+                    if (Base.AdaptiveStorageRunning)
+                    {
+                        if (thing.def.modExtensions?.Any(extension =>
+                                extension.GetType().Namespace == "AdaptiveStorage") == true)
+                        {
+                            return parent.AmbientTemperature;
+                        }
+                    }
+
+                    if (!Base.RimFridgeRunning)
+                    {
+                        continue;
+                    }
+
                     if (thing is not ThingWithComps thingWithComps)
                     {
                         continue;

@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.6.3 - Fixed compatibility with Adaptive Storage Framework correctly
+
+
 1.6.2 - Added support for the heater/coolers using the Adaptive Storage Framework
 
 
