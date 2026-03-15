@@ -10,7 +10,7 @@ public static class HeatMealInjector
     public static IEnumerable<Toil> InjectHeat(IEnumerable<Toil> values, JobDriver jd, int num,
         TargetIndex foodIndex = TargetIndex.A, TargetIndex tableIndex = TargetIndex.None)
     {
-        int currentIndex = 0;
+        var currentIndex = 0;
         foreach (var toil in values)
         {
             if (currentIndex == num)
@@ -20,6 +20,7 @@ public static class HeatMealInjector
                     yield return heatToil;
                 }
             }
+
             yield return toil;
             currentIndex++;
         }
@@ -34,11 +35,13 @@ public static class HeatMealInjector
         clean.initAction = delegate
         {
             var queue = curJob.GetTargetQueue(TargetIndex.B);
-            if (!queue.NullOrEmpty())
+            if (queue.NullOrEmpty())
             {
-                curJob.SetTarget(TargetIndex.C, queue[0]);
-                queue.RemoveAt(0);
+                return;
             }
+
+            curJob.SetTarget(TargetIndex.C, queue[0]);
+            queue.RemoveAt(0);
         };
         yield return Toils_Jump.JumpIf(exit, delegate
         {
@@ -83,14 +86,14 @@ public static class HeatMealInjector
         {
             yield return Toils_Reserve.Reserve(TargetIndex.C);
             yield return Toils_Goto.GotoThing(TargetIndex.C, PathEndMode.InteractionCell);
-            yield return Toils_HeatMeal.HeatMeal(foodIndex, TargetIndex.C).FailOnDespawnedNullOrForbiddenPlacedThings()
+            yield return Toils_HeatMeal.HeatMeal(foodIndex).FailOnDespawnedNullOrForbiddenPlacedThings()
                 .FailOnCannotTouch(TargetIndex.C, PathEndMode.InteractionCell);
             yield return Toils_Reserve.Release(TargetIndex.C);
         }
         else
         {
             yield return Toils_Goto.GotoThing(TargetIndex.C, PathEndMode.Touch);
-            yield return Toils_HeatMeal.HeatMeal(foodIndex, TargetIndex.C).FailOnDespawnedNullOrForbiddenPlacedThings()
+            yield return Toils_HeatMeal.HeatMeal(foodIndex).FailOnDespawnedNullOrForbiddenPlacedThings()
                 .FailOnCannotTouch(TargetIndex.C, PathEndMode.Touch);
         }
 
