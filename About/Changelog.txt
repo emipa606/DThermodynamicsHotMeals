@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.6.6 - Support for RimImmortal-Farmcraft, AF · Dumpling, Erin's Japanese Cuisine. Thanks to RandomEdits
+
+
 1.6.5 - Fix for heating meals for feeding patients
 Better save-support
 Thanks to jagerguy36
