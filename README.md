@@ -163,4 +163,4 @@ Let me know of any.
 
  
 
-[![Image](https://img.shields.io/github/v/release/emipa606/DThermodynamicsHotMeals?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255) | tags: food essentials
+[![Image](https://img.shields.io/github/v/release/emipa606/DThermodynamicsHotMeals?label=latest%20version&style=plastic&color=9f1111&labelColor=black)](https://steamcommunity.com/sharedfiles/filedetails/changelog/2909103255) | food essentials

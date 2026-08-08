@@ -1,5 +1,8 @@
 # Changelog for DThermodynamicsHotMeals
 
+1.6.7 - Added support for [url=https://steamcommunity.com/sharedfiles/filedetails/?id=3467551920]Campfire Stews[/url]
+
+
 1.6.6 - Support for RimImmortal-Farmcraft, AF · Dumpling, Erin's Japanese Cuisine. Thanks to RandomEdits
 
 
