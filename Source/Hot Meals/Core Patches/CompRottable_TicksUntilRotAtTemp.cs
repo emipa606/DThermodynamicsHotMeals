@@ -5,7 +5,7 @@ using RimWorld;
 namespace DThermodynamicsCore.Core_Patches;
 
 [HarmonyPatch(typeof(CompRottable), nameof(CompRottable.TicksUntilRotAtTemp))]
-internal class CompRottable_TicksUntilRotAtTemp
+internal static class CompRottable_TicksUntilRotAtTemp
 {
     public static bool Prefix(ref float temp, CompRottable __instance)
     {

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <!-- desserts -->
+      <li>
+        <name>simple dessert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>fine dessert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>lavish dessert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>gourmet dessert</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>VCE_DeepFriedBigMeat</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>VCE_DeepFriedVegetables</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>VCE_DeepFriedFish</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>VCE_Cheese</name>
+        <type>NonPerishable</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

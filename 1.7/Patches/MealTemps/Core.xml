@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>milk</name>
+        <type>ColdDrink</type>
+      </li>
+      <li>
+        <name>psychite tea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>insect jelly</name>
+        <type>RawTasty</type>
+      </li>
+      <li>
+        <name>nutrient paste meal</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>penoxycyline</name>
+        <type>None</type>
+      </li>
+      <li>
+        <name>pemmican</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>chocolate</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>kibble</name>
+        <type>None</type>
+      </li>
+      <li>
+        <name>hay</name>
+        <type>None</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

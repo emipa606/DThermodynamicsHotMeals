@@ -48,29 +48,27 @@ internal class Thought_MealTemp : Thought_Memory
     public override bool TryMergeWithExistingMemory(out bool showBubble)
     {
         var thoughts = pawn.needs.mood.thoughts;
-        if (thoughts.memories.NumMemoriesInGroup(this) >= 1)
+        if (thoughts.memories.NumMemoriesInGroup(this) >= 1 &&
+            thoughts.memories.OldestMemoryInGroup(this) is Thought_MealTemp thought_Memory)
         {
-            if (thoughts.memories.OldestMemoryInGroup(this) is Thought_MealTemp thought_Memory)
+            var moodVal = getMoodValue();
+            if (moodVal == 0) // this has 0 value, don't add it
             {
-                var moodVal = getMoodValue();
-                if (moodVal == 0) // this has 0 value, don't add it
-                {
-                    showBubble = false;
-                }
-                else if (thought_Memory.getMoodValue() == moodVal) // other value is not 0 and equals this value
-                {
-                    showBubble = thought_Memory.age > thought_Memory.def.DurationTicks / 2;
-                    thought_Memory.Renew();
-                }
-                else // different values, this one is non-zero
-                {
-                    thoughts.memories.RemoveMemory(thought_Memory);
-                    thoughts.memories.Memories.Add(this);
-                    showBubble = true;
-                }
-
-                return true;
+                showBubble = false;
             }
+            else if (thought_Memory.getMoodValue() == moodVal) // other value is not 0 and equals this value
+            {
+                showBubble = thought_Memory.age > thought_Memory.def.DurationTicks / 2;
+                thought_Memory.Renew();
+            }
+            else // different values, this one is non-zero
+            {
+                thoughts.memories.RemoveMemory(thought_Memory);
+                thoughts.memories.Memories.Add(this);
+                showBubble = true;
+            }
+
+            return true;
         }
 
         showBubble = true;

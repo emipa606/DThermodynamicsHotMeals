@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>coffee bean</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>tea leaves</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>RC2_Hardtack</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>RC2_CannedMeal</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>RC2_MealCupcake</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>RC2_MealPastry</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>RC2_DriedMeat</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>RC2_MilkCurd</name>
+        <type>RawResource</type>
+      </li>
+      <li>
+        <name>RC2_Cheese</name>
+        <type>NonPerishable</type>
+      </li>
+      <li>
+        <name>coffee</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>tea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>green tea</name>
+        <type>HotDrink</type>
+      </li>
+      <li>
+        <name>hot cocoa</name>
+        <type>HotDrink</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

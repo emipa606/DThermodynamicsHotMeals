@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationFindMod">
+    <mods>
+      <li>VGP Vegetable Garden</li>
+    </mods>
+    <match Class="PatchOperationSequence">
+      <success>Always</success>
+      <operations>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "MealSimple"]</xpath>
+          <value>
+            <thingCategories>
+              <li>SimpleMeals</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "MealFine"]</xpath>
+          <value>
+            <thingCategories>
+              <li>FineMeals</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationAdd">
+          <xpath>Defs/ThingDef[defName = "MealLavish"]</xpath>
+          <value>
+            <thingCategories>
+              <li>LavishMeals</li>
+            </thingCategories>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingCategoryDef[defName = "SimpleMeals"]/iconPath</xpath>
+          <value>
+            <iconPath>Things/Item/Meal/Simple/Simple_a</iconPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingCategoryDef[defName = "FineMeals"]/iconPath</xpath>
+          <value>
+            <iconPath>Things/Item/Meal/Fine/Fine_a</iconPath>
+          </value>
+        </li>
+        <li Class="PatchOperationReplace">
+          <xpath>Defs/ThingCategoryDef[defName = "LavishMeals"]/iconPath</xpath>
+          <value>
+            <iconPath>Things/Item/Meal/Lavish/Lavish_a</iconPath>
+          </value>
+        </li>
+      </operations>
+    </match>
+  </Operation>
+</Patch>

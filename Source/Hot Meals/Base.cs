@@ -36,7 +36,6 @@ public static class Base
         {
             if (MealSorter.IsRace(def))
             {
-                //MealAssigner.addRace(def); // not today
                 continue;
             }
 

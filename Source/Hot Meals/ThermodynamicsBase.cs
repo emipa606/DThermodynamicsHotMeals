@@ -25,7 +25,6 @@ public static class ThermodynamicsBase
                 ? changeMag
                 : minStepScaled;
             curtemp += Math.Sign(shift) * step * HotMealsSettings.diffusionModifier;
-            //curtemp += CompDTemperature.CalcTempChange(ambient, curtemp, interval, diffusionTime, minStepScaled);
             count++;
         }
 

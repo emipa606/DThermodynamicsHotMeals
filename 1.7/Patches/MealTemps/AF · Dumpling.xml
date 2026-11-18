@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>AF_MealDumpling</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>AF_CateDumpling</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>AF_GourmetDumpling</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>AF_RawDumpling</name>
+        <type>RawTasty</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

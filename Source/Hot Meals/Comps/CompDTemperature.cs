@@ -30,13 +30,10 @@ public class CompDTemperature : ThingComp
                 var thingList = parent.PositionHeld.GetThingList(parent.MapHeld);
                 foreach (var thing in thingList)
                 {
-                    if (Base.AdaptiveStorageRunning)
+                    if (Base.AdaptiveStorageRunning && thing.def.modExtensions?.Any(extension =>
+                            extension.GetType().Namespace == "AdaptiveStorage") == true)
                     {
-                        if (thing.def.modExtensions?.Any(extension =>
-                                extension.GetType().Namespace == "AdaptiveStorage") == true)
-                        {
-                            return parent.AmbientTemperature;
-                        }
+                        return parent.AmbientTemperature;
                     }
 
                     if (!Base.RimFridgeRunning)
@@ -56,7 +53,7 @@ public class CompDTemperature : ThingComp
                         continue;
                     }
 
-                    var fridgeTemp = (float)Base.RimFridgeTempField.GetValue(compRefrigerator);
+                    var fridgeTemp = (float)(Base.RimFridgeTempField.GetValue(compRefrigerator) ?? 0f);
                     return fridgeTemp;
                 }
 

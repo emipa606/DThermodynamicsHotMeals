@@ -6,7 +6,7 @@ using Verse;
 namespace DThermodynamicsCore.Core_Patches;
 
 [HarmonyPatch(typeof(CompRottable), nameof(CompRottable.CompInspectStringExtra))]
-internal class CompRottable_RotCompInspectStringExtra
+internal static class CompRottable_RotCompInspectStringExtra
 {
     public static void Postfix(ref string __result, CompRottable __instance)
     {

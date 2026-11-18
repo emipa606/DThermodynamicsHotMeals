@@ -6,7 +6,7 @@ using Verse.AI;
 namespace DHotMeals.Core_Patches;
 
 [HarmonyPatch(typeof(JobDriver_SocialRelax), "MakeNewToils")]
-internal class SocialRelax_MakeNewToils
+internal static class SocialRelax_MakeNewToils
 {
     public static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_SocialRelax __instance)
     {

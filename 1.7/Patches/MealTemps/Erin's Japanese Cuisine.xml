@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="AssignMealTemp">
+    <Meals>
+      <li>
+        <name>EJC_Tempura</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_Katsudon</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_Ramen</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_Udon</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_Yakisoba</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_CurryRice</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_Unajuu</name>
+        <type>HotMeal</type>
+      </li>
+      <li>
+        <name>EJC_Zarusoba</name>
+        <type>ColdMeal</type>
+      </li>
+      <li>
+        <name>EJC_Onigiri</name>
+        <type>RoomTempMeal</type>
+      </li>
+      <li>
+        <name>EJC_InstantRamen</name>
+        <type>NonPerishable</type>
+      </li>
+    </Meals>
+  </Operation>
+</Patch>

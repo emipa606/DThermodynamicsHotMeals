@@ -6,7 +6,7 @@ using Verse.AI;
 namespace DHotMeals.Core_Patches;
 
 [HarmonyPatch(typeof(JobDriver_FoodDeliver), "MakeNewToils")]
-internal class JobDriver_FoodDeliver_MakeNewToils
+internal static class JobDriver_FoodDeliver_MakeNewToils
 {
     public static IEnumerable<Toil> Postfix(IEnumerable<Toil> values, JobDriver_FoodDeliver __instance,
         bool ___eatingFromInventory, bool ___usingNutrientPasteDispenser)

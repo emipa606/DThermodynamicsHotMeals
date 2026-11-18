@@ -8,7 +8,7 @@ using Verse.AI;
 namespace DThermodynamicsCore.Core_Patches;
 
 [HarmonyPatch]
-public class JobDriver_Serve_MakeNewToils
+public static class JobDriver_Serve_MakeNewToils
 {
     public static bool Prepare()
     {

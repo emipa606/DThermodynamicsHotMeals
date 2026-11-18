@@ -5,17 +5,15 @@ namespace DHotMeals.Comps;
 
 public class CompDSecondLayer : ThingComp
 {
-    private Graphic graphicInt;
-
     private CompProperties_DSecondLayer Props => (CompProperties_DSecondLayer)props;
 
     protected virtual Graphic Graphic
     {
         get
         {
-            if (graphicInt != null)
+            if (field != null)
             {
-                return graphicInt;
+                return field;
             }
 
             if (Props.graphicData == null)
@@ -27,9 +25,9 @@ public class CompDSecondLayer : ThingComp
                 return BaseContent.BadGraphic;
             }
 
-            graphicInt = Props.graphicData.GraphicColoredFor(parent);
+            field = Props.graphicData.GraphicColoredFor(parent);
 
-            return graphicInt;
+            return field;
         }
     }
 
